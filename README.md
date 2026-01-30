@@ -1,16 +1,23 @@
-## FinsROV
+## FinsROV: an Underwater Camera-Based Multi-robot platform
 
 [![Python](https://img.shields.io/badge/python-3.10-blue.svg)](https://docs.python.org/3/whatsnew/3.10.html)
 [![License](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/license/mit)
 [![License](https://img.shields.io/badge/license-CC%20BY--SA%204.0-orange.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 FinsROV is a low-cost, open-source Underwater robot platform designed for underwater task and research in robotics and AI.
+FinsROV是一台开源的低成本水下机器人平台，面向AI和机器人领域中的水下任务和研究设计
 
 ## Overview
+
+本项目提供一台完整的低成本水下ROV，并包含非常高的可扩展性，可以运用于
+
+## Controller
+in low-controller document
 
 
 
 ## Wired-Joystick
+In Wired-Joystick document
 
 creat new environment, python version:[![Python](https://img.shields.io/badge/python-3.10-blue.svg)](https://docs.python.org/3/whatsnew/3.10.html)
 
@@ -22,6 +29,14 @@ pip install pyserial pygame
 如果使用V3.3之前的普通usb相机版本，请运行7-usbCameraFullControl文件； 如果使用的是V3.3网络相机版本，请运行10-webCameraCombinedControl文件。
 
 ## Video
+
+How to bulid the robot platform:
+
+coding:
+
+demo:
+
+
 
 ## Citation
 If you find this code useful, we would appreciate if you would cite our paper:
