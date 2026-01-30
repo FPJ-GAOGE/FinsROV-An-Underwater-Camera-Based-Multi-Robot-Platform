@@ -6,10 +6,23 @@
 
 FinsROV is a low-cost, open-source Underwater robot platform designed for underwater task and research in robotics and AI.
 
+## Overview
+
+
+
+## Wired-Joystick
+creat
+新建虚拟环境，python版本3.10
+pip install pyserial pygame
+硬件连接：连接相机的网口与控制口的USB口
+确认控制口的USB的COM号（可以在设备管理器里的端口（COM和LPT）项中查看），并在程序中进行修改
+如果使用V3.3之前的普通usb相机版本，请运行7-usbCameraFullControl文件； 如果使用的是V3.3网络相机版本，请运行10-webCameraCombinedControl文件。
+
+## Video
+
 ## Citation
-
 If you find this code useful, we would appreciate if you would cite our paper:
-
+如果你觉得我们的开源项目能够帮助到你，欢迎你引用我们的文章！并持续关注我们的后续研究：
 ```
 @article{xu2025aucamp,
   title={Aucamp: An Underwater Camera-Based Multi-Robot Platform with Low-Cost, Distributed, and Robust Localization},
