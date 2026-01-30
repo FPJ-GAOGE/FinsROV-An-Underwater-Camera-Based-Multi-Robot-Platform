@@ -5,11 +5,14 @@
 [![License](https://img.shields.io/badge/license-CC%20BY--SA%204.0-orange.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 FinsROV is a low-cost, open-source Underwater robot platform designed for underwater task and research in robotics and AI.
-FinsROV是一台开源的低成本水下机器人平台，面向AI和机器人领域中的水下任务和研究设计
+
+FinsROV是一台开源的低成本水下机器人平台，面向AI和机器人领域中的水下任务和研究针对性设计。八推进器结构有效的保证了机器人全向运动的
 
 ## Overview
 
 本项目提供一台完整的低成本水下ROV，并包含非常高的可扩展性，可以运用于水下物体跟踪，水下
+<img width="688" height="801" alt="image" src="https://github.com/user-attachments/assets/49a71756-a0cf-4be0-96a1-fed59e3dbb0b" />
+
 
 ## Controller
 
