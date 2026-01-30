@@ -11,9 +11,11 @@ FinsROV is a low-cost, open-source Underwater robot platform designed for underw
 
 
 ## Wired-Joystick
-[![Python](https://img.shields.io/badge/python-3.10-blue.svg)](https://docs.python.org/3/whatsnew/3.10.html)
-creat
+
+creat new environment, python version:[![Python](https://img.shields.io/badge/python-3.10-blue.svg)](https://docs.python.org/3/whatsnew/3.10.html)
+
 新建虚拟环境，python版本3.10
+
 pip install pyserial pygame
 硬件连接：连接相机的网口与控制口的USB口
 确认控制口的USB的COM号（可以在设备管理器里的端口（COM和LPT）项中查看），并在程序中进行修改
