@@ -41,7 +41,7 @@ How to bulid the robot platform:
 
 coding:
 
-basic theory about underwater robot:【【入门向】面向水下机器人的动力学与运动学建模及控制器分析】 https://www.bilibili.com/video/BV1VXmQBRE2a/?share_source=copy_web&vd_source=898a23397484d4386766c76dfa58679f
+basic theory about underwater robot:[【面向水下机器人的动力学与运动学建模及控制器分析】](https://www.bilibili.com/video/BV1VXmQBRE2a/?share_source=copy_web&vd_source=898a23397484d4386766c76dfa58679f)
 
 demo:
 
