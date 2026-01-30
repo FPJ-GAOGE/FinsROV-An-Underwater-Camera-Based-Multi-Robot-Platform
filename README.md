@@ -11,6 +11,7 @@ FinsROV is a low-cost, open-source Underwater robot platform designed for underw
 
 
 ## Wired-Joystick
+[![Python](https://img.shields.io/badge/python-3.10-blue.svg)](https://docs.python.org/3/whatsnew/3.10.html)
 creat
 新建虚拟环境，python版本3.10
 pip install pyserial pygame
