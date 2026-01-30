@@ -12,7 +12,7 @@ FinsROV是一台开源的低成本水下机器人平台，面向AI和机器人�
 本项目提供一台完整的低成本水下ROV，并包含非常高的可扩展性，可以运用于
 
 ## Controller
-in low-controller document
+本项目中嵌入式框架使用我们实验室开发的FINEMOTE框架，链接：
 
 
 
