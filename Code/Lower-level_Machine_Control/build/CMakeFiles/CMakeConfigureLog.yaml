@@ -1,0 +1,2301 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      The target system is: Generic - 1 - 
+      The host system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: -mcpu=cortex-m4;-mthumb;-mthumb-interwork;-ffunction-sections;-fdata-sections;-g;-fno-common;-fmessage-length=0;-specs=nosys.specs;-specs=nano.specs;-std=gnu99
+      Id flags:  
+      
+      The output was:
+      0
+      閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+      鐢熸垚鍚姩鏃堕棿涓?2024/9/28 16:20:44銆?
+      
+      鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdC\\CompilerIdC.vcxproj鈥?榛樿鐩爣)銆?
+      PrepareForBuild:
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\鈥濄€?
+        宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\CompilerIdC.tlog\\鈥濄€?
+      InitializeBuildStatus:
+        姝ｅ湪鍒涘缓鈥淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        姝ｅ湪鍒犻櫎鏂囦欢鈥淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+      宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdC\\CompilerIdC.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+      
+      宸叉垚鍔熺敓鎴愩€?
+          0 涓鍛?
+          0 涓敊璇?
+      
+      宸茬敤鏃堕棿 00:00:01.18
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/3.30.1/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: -mcpu=cortex-m4;-mthumb;-mthumb-interwork;-ffunction-sections;-fdata-sections;-g;-fno-common;-fmessage-length=0;-specs=nosys.specs;-specs=nano.specs;-std=c++11
+      Id flags:  
+      
+      The output was:
+      0
+      閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+      鐢熸垚鍚姩鏃堕棿涓?2024/9/28 16:20:46銆?
+      
+      鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj鈥?榛樿鐩爣)銆?
+      PrepareForBuild:
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\鈥濄€?
+        宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\CompilerIdCXX.tlog\\鈥濄€?
+      InitializeBuildStatus:
+        姝ｅ湪鍒涘缓鈥淒ebug\\CompilerIdCXX.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdCXX.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        姝ｅ湪鍒犻櫎鏂囦欢鈥淒ebug\\CompilerIdCXX.tlog\\unsuccessfulbuild鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+      宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+      
+      宸叉垚鍔熺敓鎴愩€?
+          0 涓鍛?
+          0 涓敊璇?
+      
+      宸茬敤鏃堕棿 00:00:00.71
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/3.30.1/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is Clang using "--version" did not match "(clang version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is ARMClang using "--version" did not match "armclang":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is OrangeC using "--version" did not match "occ \\(OrangeC\\) Version":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is HP using "-V" did not match "HP C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is Intel using "--version" did not match "(ICC)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+      ]+oneAPI)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is SunPro using "-V" did not match "Sun C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is XL using "-qversion" did not match "XL C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is MSVC using "-?" did not match "Microsoft":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is TI using "-h" did not match "Texas Instruments":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is TIClang using "--version" did not match "(TI (.*) Clang Compiler)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is IAR using "" did not match "IAR Assembler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is ARMCC using "" did not match "(ARM Compiler)|(ARM Assembler)|(Arm Compiler)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is NASM using "-v" did not match "(NASM version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is YASM using "--version" did not match "(yasm)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is ADSP using "-version" did not match "Analog Devices":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is QCC using "-V" did not match "gcc_nto":
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-i5p8bg"
+      binary: "C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-i5p8bg"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-mcpu=cortex-m4  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99"
+      CMAKE_C_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-gc-sections,--print-memory-usage -T C:/Users/86151/Desktop/ZY_ControlFrame-main/STM32F407IGHx_FLASH.ld"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-i5p8bg'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b5589.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+        鐢熸垚鍚姩鏃堕棿涓?2024/9/28 16:20:47銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_b5589.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_b5589.dir\\Debug\\cmTC_b5589.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_b5589.dir\\Debug\\cmTC_b5589.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_b5589.dir\\Debug\\cmTC_b5589.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /W1 /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b5589.dir\\Debug\\\\" /Fd"cmTC_b5589.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99 "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33813 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /W1 /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b5589.dir\\Debug\\\\" /Fd"cmTC_b5589.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99 "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mcpu=cortex-m4鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb-interwork鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?ffunction-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fdata-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?g鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fno-common鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fmessage-length=0鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nosys.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nano.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?std=gnu99鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\Debug\\cmTC_b5589." /INCREMENTAL /ILK:"cmTC_b5589.dir\\Debug\\cmTC_b5589.ilk" /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-i5p8bg/Debug/cmTC_b5589.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\Debug\\cmTC_b5589.lib" /MACHINE:X64  -Wl,-gc-sections,--print-memory-usage -T C:/Users/86151/Desktop/ZY_ControlFrame-main/STM32F407IGHx_FLASH.ld cmTC_b5589.dir\\Debug\\CMakeCCompilerABI.obj
+        LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?Wl,-gc-sections,--print-memory-usage鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+        LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?T鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+        C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\STM32F407IGHx_FLASH.ld : fatal error LNK1107: 鏂囦欢鏃犳晥鎴栨崯鍧? 鏃犳硶鍦?0x134E 澶勮鍙?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        
+        鐢熸垚澶辫触銆?
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj鈥?榛樿鐩爣) (1) ->
+        (ClCompile 鐩爣) -> 
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mcpu=cortex-m4鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb-interwork鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?ffunction-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fdata-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?g鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fno-common鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fmessage-length=0鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nosys.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nano.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?std=gnu99鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+        
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?Wl,-gc-sections,--print-memory-usage鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+          LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?T鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+        
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\STM32F407IGHx_FLASH.ld : fatal error LNK1107: 鏂囦欢鏃犳晥鎴栨崯鍧? 鏃犳硶鍦?0x134E 澶勮鍙?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i5p8bg\\cmTC_b5589.vcxproj]
+        
+            13 涓鍛?
+            1 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.48
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-2ot9xl"
+      binary: "C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-2ot9xl"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-mcpu=cortex-m4  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11"
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-gc-sections,--print-memory-usage -T C:/Users/86151/Desktop/ZY_ControlFrame-main/STM32F407IGHx_FLASH.ld"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-2ot9xl'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c6eb4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+        鐢熸垚鍚姩鏃堕棿涓?2024/9/28 16:20:47銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_c6eb4.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_c6eb4.dir\\Debug\\cmTC_c6eb4.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_c6eb4.dir\\Debug\\cmTC_c6eb4.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_c6eb4.dir\\Debug\\cmTC_c6eb4.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /W1 /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c6eb4.dir\\Debug\\\\" /Fd"cmTC_c6eb4.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue  -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11 "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33813 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /W1 /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c6eb4.dir\\Debug\\\\" /Fd"cmTC_c6eb4.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue  -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11 "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mcpu=cortex-m4鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb-interwork鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?ffunction-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fdata-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?g鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fno-common鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fmessage-length=0鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nosys.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nano.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?std=c++11鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\Debug\\cmTC_c6eb4." /INCREMENTAL /ILK:"cmTC_c6eb4.dir\\Debug\\cmTC_c6eb4.ilk" /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-2ot9xl/Debug/cmTC_c6eb4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\Debug\\cmTC_c6eb4.lib" /MACHINE:X64  -Wl,-gc-sections,--print-memory-usage -T C:/Users/86151/Desktop/ZY_ControlFrame-main/STM32F407IGHx_FLASH.ld cmTC_c6eb4.dir\\Debug\\CMakeCXXCompilerABI.obj
+        LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?Wl,-gc-sections,--print-memory-usage鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+        LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?T鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+        C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\STM32F407IGHx_FLASH.ld : fatal error LNK1107: 鏂囦欢鏃犳晥鎴栨崯鍧? 鏃犳硶鍦?0x134E 澶勮鍙?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        
+        鐢熸垚澶辫触銆?
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj鈥?榛樿鐩爣) (1) ->
+        (ClCompile 鐩爣) -> 
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mcpu=cortex-m4鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb-interwork鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?ffunction-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fdata-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?g鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fno-common鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fmessage-length=0鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nosys.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nano.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?std=c++11鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+        
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?Wl,-gc-sections,--print-memory-usage鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+          LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?T鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+        
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\STM32F407IGHx_FLASH.ld : fatal error LNK1107: 鏂囦欢鏃犳晥鎴栨崯鍧? 鏃犳硶鍦?0x134E 澶勮鍙?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2ot9xl\\cmTC_c6eb4.vcxproj]
+        
+            13 涓鍛?
+            1 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.56
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      The target system is: Generic - 1 - 
+      The host system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: -mcpu=cortex-m4;-mthumb;-mthumb-interwork;-ffunction-sections;-fdata-sections;-g;-fno-common;-fmessage-length=0;-specs=nosys.specs;-specs=nano.specs;-std=gnu99
+      Id flags:  
+      
+      The output was:
+      0
+      閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+      鐢熸垚鍚姩鏃堕棿涓?2024/9/29 18:30:00銆?
+      
+      鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdC\\CompilerIdC.vcxproj鈥?榛樿鐩爣)銆?
+      PrepareForBuild:
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\鈥濄€?
+        宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\CompilerIdC.tlog\\鈥濄€?
+      InitializeBuildStatus:
+        姝ｅ湪鍒涘缓鈥淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        姝ｅ湪鍒犻櫎鏂囦欢鈥淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+      宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdC\\CompilerIdC.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+      
+      宸叉垚鍔熺敓鎴愩€?
+          0 涓鍛?
+          0 涓敊璇?
+      
+      宸茬敤鏃堕棿 00:00:00.97
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/3.30.1/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: -mcpu=cortex-m4;-mthumb;-mthumb-interwork;-ffunction-sections;-fdata-sections;-g;-fno-common;-fmessage-length=0;-specs=nosys.specs;-specs=nano.specs;-std=c++11
+      Id flags:  
+      
+      The output was:
+      0
+      閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+      鐢熸垚鍚姩鏃堕棿涓?2024/9/29 18:30:01銆?
+      
+      鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj鈥?榛樿鐩爣)銆?
+      PrepareForBuild:
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\鈥濄€?
+        宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\CompilerIdCXX.tlog\\鈥濄€?
+      InitializeBuildStatus:
+        姝ｅ湪鍒涘缓鈥淒ebug\\CompilerIdCXX.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdCXX.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        姝ｅ湪鍒犻櫎鏂囦欢鈥淒ebug\\CompilerIdCXX.tlog\\unsuccessfulbuild鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+      宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+      
+      宸叉垚鍔熺敓鎴愩€?
+          0 涓鍛?
+          0 涓敊璇?
+      
+      宸茬敤鏃堕棿 00:00:00.57
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/3.30.1/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is Clang using "--version" did not match "(clang version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is ARMClang using "--version" did not match "armclang":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is OrangeC using "--version" did not match "occ \\(OrangeC\\) Version":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is HP using "-V" did not match "HP C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is Intel using "--version" did not match "(ICC)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+      ]+oneAPI)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is SunPro using "-V" did not match "Sun C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is XL using "-qversion" did not match "XL C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is MSVC using "-?" did not match "Microsoft":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is TI using "-h" did not match "Texas Instruments":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is TIClang using "--version" did not match "(TI (.*) Clang Compiler)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is IAR using "" did not match "IAR Assembler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is ARMCC using "" did not match "(ARM Compiler)|(ARM Assembler)|(Arm Compiler)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is NASM using "-v" did not match "(NASM version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is YASM using "--version" did not match "(yasm)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is ADSP using "-version" did not match "Analog Devices":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is QCC using "-V" did not match "gcc_nto":
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-n4snm5"
+      binary: "C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-n4snm5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-mcpu=cortex-m4  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99"
+      CMAKE_C_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-gc-sections,--print-memory-usage -T C:/Users/86151/Desktop/ZY_ControlFrame-main/STM32F407IGHx_FLASH.ld"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-n4snm5'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c5477.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+        鐢熸垚鍚姩鏃堕棿涓?2024/9/29 18:30:02銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_c5477.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_c5477.dir\\Debug\\cmTC_c5477.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_c5477.dir\\Debug\\cmTC_c5477.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_c5477.dir\\Debug\\cmTC_c5477.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /W1 /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c5477.dir\\Debug\\\\" /Fd"cmTC_c5477.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99 "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33813 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /W1 /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c5477.dir\\Debug\\\\" /Fd"cmTC_c5477.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99 "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mcpu=cortex-m4鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb-interwork鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?ffunction-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fdata-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?g鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fno-common鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fmessage-length=0鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nosys.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nano.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?std=gnu99鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\Debug\\cmTC_c5477." /INCREMENTAL /ILK:"cmTC_c5477.dir\\Debug\\cmTC_c5477.ilk" /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-n4snm5/Debug/cmTC_c5477.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\Debug\\cmTC_c5477.lib" /MACHINE:X64  -Wl,-gc-sections,--print-memory-usage -T C:/Users/86151/Desktop/ZY_ControlFrame-main/STM32F407IGHx_FLASH.ld cmTC_c5477.dir\\Debug\\CMakeCCompilerABI.obj
+        LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?Wl,-gc-sections,--print-memory-usage鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+        LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?T鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+        C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\STM32F407IGHx_FLASH.ld : fatal error LNK1107: 鏂囦欢鏃犳晥鎴栨崯鍧? 鏃犳硶鍦?0x134E 澶勮鍙?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        
+        鐢熸垚澶辫触銆?
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj鈥?榛樿鐩爣) (1) ->
+        (ClCompile 鐩爣) -> 
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mcpu=cortex-m4鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb-interwork鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?ffunction-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fdata-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?g鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fno-common鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fmessage-length=0鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nosys.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nano.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?std=gnu99鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+        
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?Wl,-gc-sections,--print-memory-usage鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+          LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?T鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+        
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\STM32F407IGHx_FLASH.ld : fatal error LNK1107: 鏂囦欢鏃犳晥鎴栨崯鍧? 鏃犳硶鍦?0x134E 澶勮鍙?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n4snm5\\cmTC_c5477.vcxproj]
+        
+            13 涓鍛?
+            1 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.43
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-e24yse"
+      binary: "C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-e24yse"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-mcpu=cortex-m4  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11"
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-gc-sections,--print-memory-usage -T C:/Users/86151/Desktop/ZY_ControlFrame-main/STM32F407IGHx_FLASH.ld"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-e24yse'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7f7ac.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+        鐢熸垚鍚姩鏃堕棿涓?2024/9/29 18:30:03銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_7f7ac.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_7f7ac.dir\\Debug\\cmTC_7f7ac.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_7f7ac.dir\\Debug\\cmTC_7f7ac.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_7f7ac.dir\\Debug\\cmTC_7f7ac.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /W1 /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7f7ac.dir\\Debug\\\\" /Fd"cmTC_7f7ac.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue  -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11 "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33813 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /W1 /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7f7ac.dir\\Debug\\\\" /Fd"cmTC_7f7ac.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue  -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11 "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mcpu=cortex-m4鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb-interwork鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?ffunction-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fdata-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?g鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fno-common鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fmessage-length=0鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nosys.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nano.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?std=c++11鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\Debug\\cmTC_7f7ac." /INCREMENTAL /ILK:"cmTC_7f7ac.dir\\Debug\\cmTC_7f7ac.ilk" /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-e24yse/Debug/cmTC_7f7ac.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\Debug\\cmTC_7f7ac.lib" /MACHINE:X64  -Wl,-gc-sections,--print-memory-usage -T C:/Users/86151/Desktop/ZY_ControlFrame-main/STM32F407IGHx_FLASH.ld cmTC_7f7ac.dir\\Debug\\CMakeCXXCompilerABI.obj
+        LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?Wl,-gc-sections,--print-memory-usage鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+        LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?T鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+        C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\STM32F407IGHx_FLASH.ld : fatal error LNK1107: 鏂囦欢鏃犳晥鎴栨崯鍧? 鏃犳硶鍦?0x134E 澶勮鍙?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        
+        鐢熸垚澶辫触銆?
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj鈥?榛樿鐩爣) (1) ->
+        (ClCompile 鐩爣) -> 
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mcpu=cortex-m4鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb-interwork鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?ffunction-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fdata-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?g鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fno-common鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fmessage-length=0鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nosys.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nano.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?std=c++11鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+        
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?Wl,-gc-sections,--print-memory-usage鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+          LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?T鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+        
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\STM32F407IGHx_FLASH.ld : fatal error LNK1107: 鏂囦欢鏃犳晥鎴栨崯鍧? 鏃犳硶鍦?0x134E 澶勮鍙?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e24yse\\cmTC_7f7ac.vcxproj]
+        
+            13 涓鍛?
+            1 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.56
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      The target system is: Generic - 1 - 
+      The host system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: -mcpu=cortex-m4;-mthumb;-mthumb-interwork;-ffunction-sections;-fdata-sections;-g;-fno-common;-fmessage-length=0;-specs=nosys.specs;-specs=nano.specs;-std=gnu99
+      Id flags:  
+      
+      The output was:
+      0
+      閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+      鐢熸垚鍚姩鏃堕棿涓?2024/10/7 17:19:12銆?
+      
+      鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdC\\CompilerIdC.vcxproj鈥?榛樿鐩爣)銆?
+      PrepareForBuild:
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\鈥濄€?
+        宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\CompilerIdC.tlog\\鈥濄€?
+      InitializeBuildStatus:
+        姝ｅ湪鍒涘缓鈥淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        姝ｅ湪鍒犻櫎鏂囦欢鈥淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+      宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdC\\CompilerIdC.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+      
+      宸叉垚鍔熺敓鎴愩€?
+          0 涓鍛?
+          0 涓敊璇?
+      
+      宸茬敤鏃堕棿 00:00:01.11
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/3.30.1/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: -mcpu=cortex-m4;-mthumb;-mthumb-interwork;-ffunction-sections;-fdata-sections;-g;-fno-common;-fmessage-length=0;-specs=nosys.specs;-specs=nano.specs;-std=c++11
+      Id flags:  
+      
+      The output was:
+      0
+      閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+      鐢熸垚鍚姩鏃堕棿涓?2024/10/7 17:19:13銆?
+      
+      鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj鈥?榛樿鐩爣)銆?
+      PrepareForBuild:
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\鈥濄€?
+        宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\CompilerIdCXX.tlog\\鈥濄€?
+      InitializeBuildStatus:
+        姝ｅ湪鍒涘缓鈥淒ebug\\CompilerIdCXX.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdCXX.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        姝ｅ湪鍒犻櫎鏂囦欢鈥淒ebug\\CompilerIdCXX.tlog\\unsuccessfulbuild鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+      宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+      
+      宸叉垚鍔熺敓鎴愩€?
+          0 涓鍛?
+          0 涓敊璇?
+      
+      宸茬敤鏃堕棿 00:00:00.61
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/3.30.1/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is Clang using "--version" did not match "(clang version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is ARMClang using "--version" did not match "armclang":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is OrangeC using "--version" did not match "occ \\(OrangeC\\) Version":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is HP using "-V" did not match "HP C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is Intel using "--version" did not match "(ICC)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+      ]+oneAPI)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is SunPro using "-V" did not match "Sun C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is XL using "-qversion" did not match "XL C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is MSVC using "-?" did not match "Microsoft":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is TI using "-h" did not match "Texas Instruments":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is TIClang using "--version" did not match "(TI (.*) Clang Compiler)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is IAR using "" did not match "IAR Assembler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is ARMCC using "" did not match "(ARM Compiler)|(ARM Assembler)|(Arm Compiler)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is NASM using "-v" did not match "(NASM version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is YASM using "--version" did not match "(yasm)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is ADSP using "-version" did not match "Analog Devices":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is QCC using "-V" did not match "gcc_nto":
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-xf2r3x"
+      binary: "C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-xf2r3x"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-mcpu=cortex-m4  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99"
+      CMAKE_C_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-gc-sections,--print-memory-usage -T C:/Users/86151/Desktop/ZY_ControlFrame-main/STM32F407IGHx_FLASH.ld"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-xf2r3x'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c1828.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+        鐢熸垚鍚姩鏃堕棿涓?2024/10/7 17:19:14銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_c1828.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_c1828.dir\\Debug\\cmTC_c1828.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_c1828.dir\\Debug\\cmTC_c1828.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_c1828.dir\\Debug\\cmTC_c1828.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /W1 /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c1828.dir\\Debug\\\\" /Fd"cmTC_c1828.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99 "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33813 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /W1 /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c1828.dir\\Debug\\\\" /Fd"cmTC_c1828.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99 "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mcpu=cortex-m4鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb-interwork鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?ffunction-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fdata-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?g鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fno-common鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fmessage-length=0鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nosys.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nano.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?std=gnu99鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\Debug\\cmTC_c1828." /INCREMENTAL /ILK:"cmTC_c1828.dir\\Debug\\cmTC_c1828.ilk" /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-xf2r3x/Debug/cmTC_c1828.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\Debug\\cmTC_c1828.lib" /MACHINE:X64  -Wl,-gc-sections,--print-memory-usage -T C:/Users/86151/Desktop/ZY_ControlFrame-main/STM32F407IGHx_FLASH.ld cmTC_c1828.dir\\Debug\\CMakeCCompilerABI.obj
+        LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?Wl,-gc-sections,--print-memory-usage鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+        LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?T鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+        C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\STM32F407IGHx_FLASH.ld : fatal error LNK1107: 鏂囦欢鏃犳晥鎴栨崯鍧? 鏃犳硶鍦?0x134E 澶勮鍙?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        
+        鐢熸垚澶辫触銆?
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj鈥?榛樿鐩爣) (1) ->
+        (ClCompile 鐩爣) -> 
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mcpu=cortex-m4鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb-interwork鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?ffunction-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fdata-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?g鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fno-common鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fmessage-length=0鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nosys.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nano.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?std=gnu99鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+        
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?Wl,-gc-sections,--print-memory-usage鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+          LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?T鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+        
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\STM32F407IGHx_FLASH.ld : fatal error LNK1107: 鏂囦欢鏃犳晥鎴栨崯鍧? 鏃犳硶鍦?0x134E 澶勮鍙?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xf2r3x\\cmTC_c1828.vcxproj]
+        
+            13 涓鍛?
+            1 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.41
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-pcdi9x"
+      binary: "C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-pcdi9x"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-mcpu=cortex-m4  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11"
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-gc-sections,--print-memory-usage -T C:/Users/86151/Desktop/ZY_ControlFrame-main/STM32F407IGHx_FLASH.ld"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-pcdi9x'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_dddef.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+        鐢熸垚鍚姩鏃堕棿涓?2024/10/7 17:19:15銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_dddef.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_dddef.dir\\Debug\\cmTC_dddef.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_dddef.dir\\Debug\\cmTC_dddef.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_dddef.dir\\Debug\\cmTC_dddef.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /W1 /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_dddef.dir\\Debug\\\\" /Fd"cmTC_dddef.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue  -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11 "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33813 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /W1 /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_dddef.dir\\Debug\\\\" /Fd"cmTC_dddef.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue  -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11 "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mcpu=cortex-m4鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb-interwork鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?ffunction-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fdata-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?g鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fno-common鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fmessage-length=0鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nosys.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nano.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?std=c++11鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\Debug\\cmTC_dddef." /INCREMENTAL /ILK:"cmTC_dddef.dir\\Debug\\cmTC_dddef.ilk" /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-pcdi9x/Debug/cmTC_dddef.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\Debug\\cmTC_dddef.lib" /MACHINE:X64  -Wl,-gc-sections,--print-memory-usage -T C:/Users/86151/Desktop/ZY_ControlFrame-main/STM32F407IGHx_FLASH.ld cmTC_dddef.dir\\Debug\\CMakeCXXCompilerABI.obj
+        LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?Wl,-gc-sections,--print-memory-usage鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+        LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?T鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+        C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\STM32F407IGHx_FLASH.ld : fatal error LNK1107: 鏂囦欢鏃犳晥鎴栨崯鍧? 鏃犳硶鍦?0x134E 澶勮鍙?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        
+        鐢熸垚澶辫触銆?
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj鈥?榛樿鐩爣) (1) ->
+        (ClCompile 鐩爣) -> 
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mcpu=cortex-m4鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb-interwork鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?ffunction-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fdata-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?g鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fno-common鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fmessage-length=0鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nosys.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nano.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?std=c++11鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+        
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?Wl,-gc-sections,--print-memory-usage鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+          LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?T鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+        
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\STM32F407IGHx_FLASH.ld : fatal error LNK1107: 鏂囦欢鏃犳晥鎴栨崯鍧? 鏃犳硶鍦?0x134E 澶勮鍙?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pcdi9x\\cmTC_dddef.vcxproj]
+        
+            13 涓鍛?
+            1 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.41
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      The target system is: Generic - 1 - 
+      The host system is: Windows - 10.0.22631 - AMD64
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      The target system is: Generic - 1 - 
+      The host system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: -mcpu=cortex-m4;-mthumb;-mthumb-interwork;-ffunction-sections;-fdata-sections;-g;-fno-common;-fmessage-length=0;-specs=nosys.specs;-specs=nano.specs;-std=gnu99
+      Id flags:  
+      
+      The output was:
+      0
+      閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+      鐢熸垚鍚姩鏃堕棿涓?2024/10/21 12:12:39銆?
+      
+      鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdC\\CompilerIdC.vcxproj鈥?榛樿鐩爣)銆?
+      PrepareForBuild:
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\鈥濄€?
+        宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\CompilerIdC.tlog\\鈥濄€?
+      InitializeBuildStatus:
+        姝ｅ湪鍒涘缓鈥淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        姝ｅ湪鍒犻櫎鏂囦欢鈥淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+      宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdC\\CompilerIdC.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+      
+      宸叉垚鍔熺敓鎴愩€?
+          0 涓鍛?
+          0 涓敊璇?
+      
+      宸茬敤鏃堕棿 00:00:01.09
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/3.30.1/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: -mcpu=cortex-m4;-mthumb;-mthumb-interwork;-ffunction-sections;-fdata-sections;-g;-fno-common;-fmessage-length=0;-specs=nosys.specs;-specs=nano.specs;-std=c++11
+      Id flags:  
+      
+      The output was:
+      0
+      閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+      鐢熸垚鍚姩鏃堕棿涓?2024/10/21 12:12:40銆?
+      
+      鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj鈥?榛樿鐩爣)銆?
+      PrepareForBuild:
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\鈥濄€?
+        宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\CompilerIdCXX.tlog\\鈥濄€?
+      InitializeBuildStatus:
+        姝ｅ湪鍒涘缓鈥淒ebug\\CompilerIdCXX.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdCXX.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        姝ｅ湪鍒犻櫎鏂囦欢鈥淒ebug\\CompilerIdCXX.tlog\\unsuccessfulbuild鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+      宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+      
+      宸叉垚鍔熺敓鎴愩€?
+          0 涓鍛?
+          0 涓敊璇?
+      
+      宸茬敤鏃堕棿 00:00:00.54
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/3.30.1/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is Clang using "--version" did not match "(clang version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is ARMClang using "--version" did not match "armclang":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is OrangeC using "--version" did not match "occ \\(OrangeC\\) Version":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is HP using "-V" did not match "HP C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is Intel using "--version" did not match "(ICC)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+      ]+oneAPI)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is SunPro using "-V" did not match "Sun C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is XL using "-qversion" did not match "XL C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is MSVC using "-?" did not match "Microsoft":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is TI using "-h" did not match "Texas Instruments":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is TIClang using "--version" did not match "(TI (.*) Clang Compiler)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is IAR using "" did not match "IAR Assembler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is ARMCC using "" did not match "(ARM Compiler)|(ARM Assembler)|(Arm Compiler)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is NASM using "-v" did not match "(NASM version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is YASM using "--version" did not match "(yasm)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is ADSP using "-version" did not match "Analog Devices":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is QCC using "-V" did not match "gcc_nto":
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-s4yjmf"
+      binary: "C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-s4yjmf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-mcpu=cortex-m4  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99"
+      CMAKE_C_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-gc-sections,--print-memory-usage -T C:/Users/86151/Desktop/ZY_ControlFrame-main/STM32F407IGHx_FLASH.ld"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-s4yjmf'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d306d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+        鐢熸垚鍚姩鏃堕棿涓?2024/10/21 12:12:41銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_d306d.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_d306d.dir\\Debug\\cmTC_d306d.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_d306d.dir\\Debug\\cmTC_d306d.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_d306d.dir\\Debug\\cmTC_d306d.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /W1 /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d306d.dir\\Debug\\\\" /Fd"cmTC_d306d.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99 "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33813 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /W1 /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d306d.dir\\Debug\\\\" /Fd"cmTC_d306d.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99 "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mcpu=cortex-m4鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb-interwork鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?ffunction-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fdata-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?g鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fno-common鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fmessage-length=0鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nosys.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nano.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?std=gnu99鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\Debug\\cmTC_d306d." /INCREMENTAL /ILK:"cmTC_d306d.dir\\Debug\\cmTC_d306d.ilk" /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-s4yjmf/Debug/cmTC_d306d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\Debug\\cmTC_d306d.lib" /MACHINE:X64  -Wl,-gc-sections,--print-memory-usage -T C:/Users/86151/Desktop/ZY_ControlFrame-main/STM32F407IGHx_FLASH.ld cmTC_d306d.dir\\Debug\\CMakeCCompilerABI.obj
+        LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?Wl,-gc-sections,--print-memory-usage鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+        LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?T鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+        C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\STM32F407IGHx_FLASH.ld : fatal error LNK1107: 鏂囦欢鏃犳晥鎴栨崯鍧? 鏃犳硶鍦?0x134E 澶勮鍙?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        
+        鐢熸垚澶辫触銆?
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj鈥?榛樿鐩爣) (1) ->
+        (ClCompile 鐩爣) -> 
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mcpu=cortex-m4鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb-interwork鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?ffunction-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fdata-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?g鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fno-common鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fmessage-length=0鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nosys.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nano.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?std=gnu99鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+        
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?Wl,-gc-sections,--print-memory-usage鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+          LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?T鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+        
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\STM32F407IGHx_FLASH.ld : fatal error LNK1107: 鏂囦欢鏃犳晥鎴栨崯鍧? 鏃犳硶鍦?0x134E 澶勮鍙?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4yjmf\\cmTC_d306d.vcxproj]
+        
+            13 涓鍛?
+            1 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.38
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-a4xtp6"
+      binary: "C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-a4xtp6"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-mcpu=cortex-m4  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11"
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-gc-sections,--print-memory-usage -T C:/Users/86151/Desktop/ZY_ControlFrame-main/STM32F407IGHx_FLASH.ld"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-a4xtp6'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_35640.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+        鐢熸垚鍚姩鏃堕棿涓?2024/10/21 12:12:42銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_35640.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_35640.dir\\Debug\\cmTC_35640.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_35640.dir\\Debug\\cmTC_35640.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_35640.dir\\Debug\\cmTC_35640.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /W1 /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_35640.dir\\Debug\\\\" /Fd"cmTC_35640.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue  -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11 "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33813 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /W1 /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_35640.dir\\Debug\\\\" /Fd"cmTC_35640.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue  -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11 "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mcpu=cortex-m4鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb-interwork鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?ffunction-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fdata-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?g鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fno-common鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fmessage-length=0鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nosys.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nano.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?std=c++11鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\Debug\\cmTC_35640." /INCREMENTAL /ILK:"cmTC_35640.dir\\Debug\\cmTC_35640.ilk" /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-a4xtp6/Debug/cmTC_35640.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\Debug\\cmTC_35640.lib" /MACHINE:X64  -Wl,-gc-sections,--print-memory-usage -T C:/Users/86151/Desktop/ZY_ControlFrame-main/STM32F407IGHx_FLASH.ld cmTC_35640.dir\\Debug\\CMakeCXXCompilerABI.obj
+        LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?Wl,-gc-sections,--print-memory-usage鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+        LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?T鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+        C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\STM32F407IGHx_FLASH.ld : fatal error LNK1107: 鏂囦欢鏃犳晥鎴栨崯鍧? 鏃犳硶鍦?0x134E 澶勮鍙?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        
+        鐢熸垚澶辫触銆?
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj鈥?榛樿鐩爣) (1) ->
+        (ClCompile 鐩爣) -> 
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mcpu=cortex-m4鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb-interwork鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?ffunction-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fdata-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?g鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fno-common鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fmessage-length=0鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nosys.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nano.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?std=c++11鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+        
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?Wl,-gc-sections,--print-memory-usage鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+          LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?T鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+        
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\STM32F407IGHx_FLASH.ld : fatal error LNK1107: 鏂囦欢鏃犳晥鎴栨崯鍧? 鏃犳硶鍦?0x134E 澶勮鍙?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4xtp6\\cmTC_35640.vcxproj]
+        
+            13 涓鍛?
+            1 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.41
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      The target system is: Generic - 1 - 
+      The host system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: -mcpu=cortex-m4;-mthumb;-mthumb-interwork;-ffunction-sections;-fdata-sections;-g;-fno-common;-fmessage-length=0;-specs=nosys.specs;-specs=nano.specs;-std=gnu99
+      Id flags:  
+      
+      The output was:
+      0
+      閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+      鐢熸垚鍚姩鏃堕棿涓?2024/10/21 20:05:11銆?
+      
+      鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdC\\CompilerIdC.vcxproj鈥?榛樿鐩爣)銆?
+      PrepareForBuild:
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\鈥濄€?
+        宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\CompilerIdC.tlog\\鈥濄€?
+      InitializeBuildStatus:
+        姝ｅ湪鍒涘缓鈥淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        姝ｅ湪鍒犻櫎鏂囦欢鈥淒ebug\\CompilerIdC.tlog\\unsuccessfulbuild鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+      宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdC\\CompilerIdC.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+      
+      宸叉垚鍔熺敓鎴愩€?
+          0 涓鍛?
+          0 涓敊璇?
+      
+      宸茬敤鏃堕棿 00:00:00.99
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/3.30.1/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: -mcpu=cortex-m4;-mthumb;-mthumb-interwork;-ffunction-sections;-fdata-sections;-g;-fno-common;-fmessage-length=0;-specs=nosys.specs;-specs=nano.specs;-std=c++11
+      Id flags:  
+      
+      The output was:
+      0
+      閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+      鐢熸垚鍚姩鏃堕棿涓?2024/10/21 20:05:12銆?
+      
+      鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj鈥?榛樿鐩爣)銆?
+      PrepareForBuild:
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\鈥濄€?
+        宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+        姝ｅ湪鍒涘缓鐩綍鈥淒ebug\\CompilerIdCXX.tlog\\鈥濄€?
+      InitializeBuildStatus:
+        姝ｅ湪鍒涘缓鈥淒ebug\\CompilerIdCXX.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdCXX.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        姝ｅ湪鍒犻櫎鏂囦欢鈥淒ebug\\CompilerIdCXX.tlog\\unsuccessfulbuild鈥濄€?
+        姝ｅ湪瀵光€淒ebug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+      宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\3.30.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+      
+      宸叉垚鍔熺敓鎴愩€?
+          0 涓鍛?
+          0 涓敊璇?
+      
+      宸茬敤鏃堕棿 00:00:00.64
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/3.30.1/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is Clang using "--version" did not match "(clang version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is ARMClang using "--version" did not match "armclang":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is OrangeC using "--version" did not match "occ \\(OrangeC\\) Version":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is HP using "-V" did not match "HP C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is Intel using "--version" did not match "(ICC)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+      ]+oneAPI)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is SunPro using "-V" did not match "Sun C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is XL using "-qversion" did not match "XL C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is MSVC using "-?" did not match "Microsoft":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is TI using "-h" did not match "Texas Instruments":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is TIClang using "--version" did not match "(TI (.*) Clang Compiler)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is IAR using "" did not match "IAR Assembler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is ARMCC using "" did not match "(ARM Compiler)|(ARM Assembler)|(Arm Compiler)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is NASM using "-v" did not match "(NASM version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is YASM using "--version" did not match "(yasm)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is ADSP using "-version" did not match "Analog Devices":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    message: |
+      Checking whether the ASM compiler is QCC using "-V" did not match "gcc_nto":
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-7m7f3i"
+      binary: "C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-7m7f3i"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-mcpu=cortex-m4  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99"
+      CMAKE_C_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-gc-sections,--print-memory-usage -T C:/Users/86151/Desktop/ZY_ControlFrame-main/STM32F407IGHx_FLASH.ld"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-7m7f3i'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3604c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+        鐢熸垚鍚姩鏃堕棿涓?2024/10/21 20:05:13銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_3604c.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_3604c.dir\\Debug\\cmTC_3604c.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_3604c.dir\\Debug\\cmTC_3604c.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_3604c.dir\\Debug\\cmTC_3604c.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /W1 /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3604c.dir\\Debug\\\\" /Fd"cmTC_3604c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99 "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33813 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /W1 /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3604c.dir\\Debug\\\\" /Fd"cmTC_3604c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue  -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99 "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mcpu=cortex-m4鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb-interwork鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?ffunction-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fdata-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?g鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fno-common鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fmessage-length=0鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nosys.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nano.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?std=gnu99鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\Debug\\cmTC_3604c." /INCREMENTAL /ILK:"cmTC_3604c.dir\\Debug\\cmTC_3604c.ilk" /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-7m7f3i/Debug/cmTC_3604c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\Debug\\cmTC_3604c.lib" /MACHINE:X64  -Wl,-gc-sections,--print-memory-usage -T C:/Users/86151/Desktop/ZY_ControlFrame-main/STM32F407IGHx_FLASH.ld cmTC_3604c.dir\\Debug\\CMakeCCompilerABI.obj
+        LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?Wl,-gc-sections,--print-memory-usage鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+        LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?T鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+        C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\STM32F407IGHx_FLASH.ld : fatal error LNK1107: 鏂囦欢鏃犳晥鎴栨崯鍧? 鏃犳硶鍦?0x134E 澶勮鍙?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        
+        鐢熸垚澶辫触銆?
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj鈥?榛樿鐩爣) (1) ->
+        (ClCompile 鐩爣) -> 
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mcpu=cortex-m4鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb-interwork鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?ffunction-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fdata-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?g鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fno-common鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fmessage-length=0鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nosys.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nano.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?std=gnu99鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+        
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?Wl,-gc-sections,--print-memory-usage鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+          LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?T鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+        
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\STM32F407IGHx_FLASH.ld : fatal error LNK1107: 鏂囦欢鏃犳晥鎴栨崯鍧? 鏃犳硶鍦?0x134E 澶勮鍙?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7m7f3i\\cmTC_3604c.vcxproj]
+        
+            13 涓鍛?
+            1 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.48
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "D:/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:34 (PROJECT)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-ej6g5n"
+      binary: "C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-ej6g5n"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-mcpu=cortex-m4  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11"
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-gc-sections,--print-memory-usage -T C:/Users/86151/Desktop/ZY_ControlFrame-main/STM32F407IGHx_FLASH.ld"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-ej6g5n'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_262a1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.10.4+10fbfbf2e
+        鐢熸垚鍚姩鏃堕棿涓?2024/10/21 20:05:14銆?
+        
+        鑺傜偣 1 涓婄殑椤圭洰鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj鈥?榛樿鐩爣)銆?
+        PrepareForBuild:
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_262a1.dir\\Debug\\鈥濄€?
+          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
+          姝ｅ湪鍒涘缓鐩綍鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_262a1.dir\\Debug\\cmTC_262a1.tlog\\鈥濄€?
+        InitializeBuildStatus:
+          姝ｅ湪鍒涘缓鈥渃mTC_262a1.dir\\Debug\\cmTC_262a1.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_262a1.dir\\Debug\\cmTC_262a1.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /W1 /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_262a1.dir\\Debug\\\\" /Fd"cmTC_262a1.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue  -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11 "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.40.33813 鐗?
+          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
+          cl /c /W1 /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_262a1.dir\\Debug\\\\" /Fd"cmTC_262a1.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue  -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11 "D:\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mcpu=cortex-m4鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb-interwork鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?ffunction-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fdata-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?g鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fno-common鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fmessage-length=0鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nosys.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nano.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+        cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?std=c++11鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\Debug\\cmTC_262a1." /INCREMENTAL /ILK:"cmTC_262a1.dir\\Debug\\cmTC_262a1.ilk" /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:/Users/86151/Desktop/ZY_ControlFrame-main/build/CMakeFiles/CMakeScratch/TryCompile-ej6g5n/Debug/cmTC_262a1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\Debug\\cmTC_262a1.lib" /MACHINE:X64  -Wl,-gc-sections,--print-memory-usage -T C:/Users/86151/Desktop/ZY_ControlFrame-main/STM32F407IGHx_FLASH.ld cmTC_262a1.dir\\Debug\\CMakeCXXCompilerABI.obj
+        LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?Wl,-gc-sections,--print-memory-usage鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+        LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?T鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+        C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\STM32F407IGHx_FLASH.ld : fatal error LNK1107: 鏂囦欢鏃犳晥鎴栨崯鍧? 鏃犳硶鍦?0x134E 澶勮鍙?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+        宸插畬鎴愮敓鎴愰」鐩€淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
+        
+        鐢熸垚澶辫触銆?
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj鈥?榛樿鐩爣) (1) ->
+        (ClCompile 鐩爣) -> 
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mcpu=cortex-m4鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?mthumb-interwork鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?ffunction-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fdata-sections鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?g鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fno-common鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?fmessage-length=0鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nosys.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?specs=nano.specs鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+          cl : 鍛戒护琛? warning D9002: 蹇界暐鏈煡閫夐」鈥?std=c++11鈥?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+        
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?Wl,-gc-sections,--print-memory-usage鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+          LINK : warning LNK4044: 鏃犳硶璇嗗埆鐨勯€夐」鈥?T鈥濓紱宸插拷鐣?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+        
+        
+        鈥淐:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj鈥?榛樿鐩爣) (1) ->
+        (Link 鐩爣) -> 
+          C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\STM32F407IGHx_FLASH.ld : fatal error LNK1107: 鏂囦欢鏃犳晥鎴栨崯鍧? 鏃犳硶鍦?0x134E 澶勮鍙?[C:\\Users\\86151\\Desktop\\ZY_ControlFrame-main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ej6g5n\\cmTC_262a1.vcxproj]
+        
+            13 涓鍛?
+            1 涓敊璇?
+        
+        宸茬敤鏃堕棿 00:00:00.48
+        
+      exitCode: 1
+...
