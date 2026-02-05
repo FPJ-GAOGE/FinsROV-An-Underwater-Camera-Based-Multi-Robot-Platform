@@ -1,0 +1,25 @@
+串口通信协议：
+初始状态为所有推进器均不转，发送"ON"后，中间四个推进器运行，开启悬浮状态，外围四个推进器不转
+在悬浮状态下，发送“PRO:xxxx,yyyy,zzzz,wwww,ddd”控制外围四个推进器
+其中xxxx为左前，yyyy为左后，zzzz为右前，wwww为右后，四组参数均为PWM信号高电平时间，单位us，1500为不转，1500-2000正转，1000-1500反转，与1500相差越大转速越快
+ddd为深度，单位mm
+发送"OFF"退出悬浮状态，各推进器均停下
+发送“CA”水压计进行校准，校准后串口收到四个水压计数据，零偏值自动更新，但重启后不会保存。若要重启后继续使用数据，则需在Sensor.cpp的243-246行修改零偏值。
+
+省流版：
+    校准水压计零偏值：CA
+    读取水压计读数：VA
+    设置推进器和舵机的PWM值：MOT: dddd, dddd, dddd, dddd, dddd, dddd, dddd, dddd, dddd, dddd
+    前进：W
+    后退：S
+    左移：A
+    右移：D
+    顺时针：E
+    逆时针：Q
+    更新为初始的PWM，悬浮状态：Z
+    更新深度：H:ddd
+    更新为给定的PWM，更新深度：PRO:dddd, dddd, dddd, dddd, ddd
+    更新速度与角速度：VEL: vvv, vvv, aaa
+    关闭PID控制，更新为初始的PWM：OFF
+    开启PID控制，更新为初始的PWM：ON
+    无PID控制下，更新为给定的PWM：TES: dddd, dddd, dddd, dddd, dddd, dddd, dddd, dddd, dddd, dddd

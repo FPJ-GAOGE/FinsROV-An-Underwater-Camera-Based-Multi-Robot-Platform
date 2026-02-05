@@ -205,14 +205,14 @@ int main(void)
             a++;
             for(int i = 0 ; i < DEVICE_NUM ; ++i){
                 device[i]->Handle();
-                // if (a==150&&i==4)
-                // {
-                //     time_end = HAL_GetTick();
-                //     time_interval = time_end - time_start;
-                //     send_int(time_interval, 1);
-                //     a = 0;
-                //     time_start = HAL_GetTick();
-                // }
+//                if (a==150&&i==4)
+//                {
+//                    time_end = HAL_GetTick();
+//                    time_interval = time_end - time_start;
+//                    send_int(time_interval, 1);
+//                    a = 0;
+//                    time_start = HAL_GetTick();
+//                }
             }
             
         }

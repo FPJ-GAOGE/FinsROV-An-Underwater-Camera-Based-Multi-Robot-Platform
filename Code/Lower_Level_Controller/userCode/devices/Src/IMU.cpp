@@ -182,6 +182,11 @@ void IMU::DMA_IT_Handle()
             // send_float(pro_data.accel[0], 2, 0);
             // send_float(pro_data.accel[1], 2, 0);
             // send_float(pro_data.accel[2], 2, 1);
+							for(int i=0; i<3;i++)
+							 {
+									 send_float(PressureSensor::pressure_sensor.data_pressure[i], 2, 0);
+							 }
+							 send_float(PressureSensor::pressure_sensor.data_pressure[3], 2, 1);
             }
             dma_state = IMU_DMA_IDLE;
             break;

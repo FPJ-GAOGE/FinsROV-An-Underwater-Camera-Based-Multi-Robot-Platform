@@ -11,8 +11,8 @@
 std::array<int8_t, 8> Sign = {1, -1, 1, 1, -1, -1, 1, -1}; // 推进器正反桨，正1反-1，序号为推进器序号
 std::array<uint8_t, 4> InID = {1, 2, 6, 5};                // V33-1,2内部的4个推进器接到扩展板上的序号，左前-左后-右前-右后
 std::array<uint8_t, 4> OutID = {0, 3, 7, 4};               // V33-1,2外部的4个推进器接到扩展板上的序号，左前-左后-右前-右后
-// int32_t InitPWM = 1610; // 推进器初始化的PWM（V33-0,1）
-int32_t InitPWM = 1540; // 推进器初始化的PWM（V33-2）
+int32_t InitPWM = 1610; // 推进器初始化的PWM（V33-0,1）
+//int32_t InitPWM = 1540; // 推进器初始化的PWM（V33-2）
 std::array<int32_t, 8> Compensation = {50, 50, 50, 50, 50, 50, 50, 50}; // 死区补偿值
 // 垂直推进器
 std::array<int32_t, 4> FloatPWM = {
@@ -163,7 +163,7 @@ void Propeller_I2C::Receive()
     uint8_t command_num = sizeof(propeller_command) / sizeof(Propeller_Command_t);
     for (uint8_t i=0; i<command_num; i++)
     {
-        if (strncmp((char *)RxBuffer + 3, propeller_command[i].str, propeller_command[i].len) == 0)
+        if (strncmp((char *)RxBuffer, propeller_command[i].str, propeller_command[i].len) == 0)
         {
             (this->*(propeller_command[i].handler))();
         }
@@ -402,7 +402,7 @@ void Propeller_I2C::vertical_PWM_allocation()
     }
     else{
         for(int i=0; i<PROPELLER_NUM; i++){
-            current_PWM[i] = Parameter.InitPWM;
+            //current_PWM[i] = Parameter.InitPWM;
         }
     }
 }
@@ -411,24 +411,26 @@ void Propeller_I2C::vertical_PWM_allocation()
 void Propeller_I2C::horizontal_PWM_allocation()
 {
     float yaw;
-    if(flag_angle){
+	  if(flag_float){
+			if(flag_angle){
         angle_ctrl();
         yaw = PWM_component.Yaw;
-    }
-    else{
-        yaw = 0;
-    }
-    for (int i=0; i<4; i++)
-    {
-        uint8_t idx = Parameter.OutID[i];
-        int32_t sign = Parameter.Sign[idx];
-        int32_t base = state_PWM_map[motion_state][i];
-        int32_t comp = Parameter.Compensation[idx];
-        int32_t pwm = base + ((i<2) ? sign : - sign) * yaw;
-        if (pwm > Parameter.InitPWM) pwm += comp;
-        else if(pwm < Parameter.InitPWM) pwm -= comp; // 补偿电机死区
-        current_PWM[idx] = pwm;
-    }
+			}
+			else{
+					yaw = 0;
+			}
+			for (int i=0; i<4; i++)
+			{
+					uint8_t idx = Parameter.OutID[i];
+					int32_t sign = Parameter.Sign[idx];
+					int32_t base = state_PWM_map[motion_state][i];
+					int32_t comp = Parameter.Compensation[idx];
+					int32_t pwm = base + ((i<2) ? sign : - sign) * yaw;
+					if (pwm > Parameter.InitPWM) pwm += comp;
+					else if(pwm < Parameter.InitPWM) pwm -= comp; // 补偿电机死区
+					current_PWM[idx] = pwm;
+			}
+		}
 }
 
 
@@ -442,7 +444,7 @@ float Propeller_I2C::normalize_angle(float angle)
 void Propeller_I2C::command_set_angle_value(){
     if (flag_angle && flag_float)
     {
-        char* data_str = (char *)RxBuffer + 7;
+        char* data_str = (char *)RxBuffer + 4;
         Target_yaw = deg2rad(atoi(data_str));
     }
 }
@@ -450,7 +452,7 @@ void Propeller_I2C::command_set_angle_value(){
 void Propeller_I2C::command_set_angle_closeloop(){
     if (flag_float)
     {
-        char* data_str = (char *)RxBuffer + 7;
+        char* data_str = (char *)RxBuffer + 4;
         if (strncmp(data_str, "ON", 2) == 0)
         {
             flag_angle = true;
@@ -466,7 +468,7 @@ void Propeller_I2C::command_set_angle_closeloop(){
 void Propeller_I2C::command_test(){
     if (!flag_float && !flag_angle)
     {
-        char* data_str = (char *)RxBuffer + 7;
+        char* data_str = (char *)RxBuffer + 4;
         char *token = strtok(data_str, ",");
         int i = 0;
         while (token != NULL && i < 8)
