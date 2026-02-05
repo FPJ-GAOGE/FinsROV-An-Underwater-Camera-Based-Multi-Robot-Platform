@@ -5,12 +5,12 @@
 
     2.1 Open Anaconda Prompt
     
-    2.2 Create a new virtual environment (Python 3.10)
+    2.2 Create a new virtual environment (Python 3.10):
     ```bash
     conda create -n FinsROV python=3.10
     ```
 
-    2.3 Activate the environment
+    2.3 Activate the environment:
     ```bash
      conda activate FinsROV
     ```
@@ -19,10 +19,10 @@
     ```bash
     pip install pyserial pygame
     pip install opencv-python
-    ```
-    
+    ```   
 
 1. 需要安装的第三方库：pyserial, pygame, opencv
+
 2. 建议使用Anaconda管理虚拟环境：
 
     2.1 打开Anaconda Prompt 
@@ -50,6 +50,7 @@ You may verify detection via: Win + R → type `joy.cpl` → check whether the c
 
 3. Ensure the ROV is connected to the power supply.
 
+
 1. 将ROV线缆的USB插头与电脑连接
 
 2. 确保手柄与电脑连接（有线/无线适配器/蓝牙），可通过Win+R → 输入joy.cpl → 查看列表里有无控制器
@@ -57,7 +58,7 @@ You may verify detection via: Win + R → type `joy.cpl` → check whether the c
 3. 确保ROV与电源连接
 
 # Code Configuration
-1. Before running the program, update **the serial communication port** in the code to match **the COM port assigned to the tether’s USB interface** (check via Device Manager → Ports (COM & LPT), e.g., COM11).
+1. Before running the program, update **the serial communication port in the code** to match **the COM port assigned to the tether’s USB interface** (check via Device Manager → Ports (COM & LPT), e.g., COM11).
     After confirming the COM port, locate the following line in the code:
     ```Python
     serial.open("COM28")   # replace with the actual COM port on your device
