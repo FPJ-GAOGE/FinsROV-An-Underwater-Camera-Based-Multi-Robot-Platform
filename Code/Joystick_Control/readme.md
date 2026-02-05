@@ -12,7 +12,7 @@
 
     2.3 Activate the environment:
     ```bash
-     conda activate FinsROV
+    conda activate FinsROV
     ```
 
     2.4 Install the required libraries:
@@ -20,7 +20,7 @@
     pip install pyserial pygame
     pip install opencv-python
     ```   
-
+#
 1. 需要安装的第三方库：pyserial, pygame, opencv
 
 2. 建议使用Anaconda管理虚拟环境：
@@ -33,7 +33,7 @@
     ```
     2.3 激活创建的虚拟环境：
     ```bash
-     conda activate FinsROV
+    conda activate FinsROV
     ```
    
     2.4 安装第三方库：
@@ -50,7 +50,7 @@ You may verify detection via: Win + R → type `joy.cpl` → check whether the c
 
 3. Ensure the ROV is connected to the power supply.
 
-
+#
 1. 将ROV线缆的USB插头与电脑连接
 
 2. 确保手柄与电脑连接（有线/无线适配器/蓝牙），可通过Win+R → 输入joy.cpl → 查看列表里有无控制器
@@ -69,16 +69,16 @@ You may verify detection via: Win + R → type `joy.cpl` → check whether the c
     ```
 2. Run the `usbCameraFullControl` file. The control mapping is as follows:
 
-Start: enable/disable hover control
+    Start: enable/disable hover control
 
-D-pad: planar motion (forward/backward/left/right)
+    D-pad: planar motion (forward/backward/left/right)
 
-X / Y: planar rotation direction
+    X / Y: planar rotation direction
 
-A / B: ascend / descend
+    A / B: ascend / descend
 
-Note: the speed is currently hard-coded.
-
+    Note: the speed is currently hard-coded.
+#
 1. 运行前需修改代码中对应的串口通讯的端口号，即电脑识别的已插入的线缆USB插头的端口号（可以通过设备管理器 → 端口（COM和LPT）查看，比如COM11）
     确认端口号后在代码中找到以下语句：
     ```Python
