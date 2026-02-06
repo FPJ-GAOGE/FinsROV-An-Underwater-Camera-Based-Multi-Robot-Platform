@@ -78,6 +78,7 @@ You may verify detection via: Win + R → type `joy.cpl` → check whether the c
     A / B: ascend / descend
 
     Note: the speed is currently hard-coded.
+3. When running the program, ensure that the serial debugging assistant is closed; otherwise, the serial port may be occupied, preventing the joystick signals from being transmitted to the lower-level controller via the serial interface.
 #
 1. 运行前需修改代码中对应的串口通讯的端口号，即电脑识别的已插入的线缆USB插头的端口号（可以通过设备管理器 → 端口（COM和LPT）查看，比如COM11）
     确认端口号后在代码中找到以下语句：
@@ -89,3 +90,4 @@ You may verify detection via: Win + R → type `joy.cpl` → check whether the c
     serial.open("COM11")
     ```
 2. 运行`usbCameraFullControl`文件。操作按键为：start启动/关闭悬浮控制，十字键控制水平面前后左右运动，XY控制水平面旋转方向，AB控制上升下潜。注：目前速度为写死状态。
+3. 运行时注意关闭串口调试助手，否则会由于端口占用导致手柄信号无法通过串口发送给下位机。
