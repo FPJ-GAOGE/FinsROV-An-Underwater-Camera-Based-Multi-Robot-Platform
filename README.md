@@ -1,4 +1,4 @@
-## FinsROV: an Underwater Camera-Based Multi-robot platform
+## FinsROV: an Underwater Camera-Based Multi-robot Platform
 
 [![Python](https://img.shields.io/badge/python-3.10-blue.svg)](https://docs.python.org/3/whatsnew/3.10.html)
 [![License](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/license/mit)
