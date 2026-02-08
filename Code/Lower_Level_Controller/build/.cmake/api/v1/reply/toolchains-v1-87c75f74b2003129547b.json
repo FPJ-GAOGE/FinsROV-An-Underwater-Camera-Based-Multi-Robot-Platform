@@ -1,0 +1,134 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : {},
+				"path" : "C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe",
+				"version" : ""
+			},
+			"language" : "ASM",
+			"sourceFileExtensions" : 
+			[
+				"s",
+				"S",
+				"asm"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/newlib-nano",
+						"C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/12.3.1/include",
+						"C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/12.3.1/include-fixed",
+						"C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include"
+					],
+					"linkDirectories" : 
+					[
+						"C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m/nofp",
+						"C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/arm-none-eabi/lib/thumb/v7e-m/nofp",
+						"C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/12.3.1",
+						"C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/lib/gcc",
+						"C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/arm-none-eabi/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"gcc",
+						"g_nano",
+						"c_nano",
+						"gcc",
+						"c_nano",
+						"nosys",
+						"gcc",
+						"c_nano",
+						"nosys"
+					]
+				},
+				"path" : "C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe",
+				"version" : "12.3.1"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/newlib-nano",
+						"C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/c++/12.3.1",
+						"C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/c++/12.3.1/arm-none-eabi/thumb/v7e-m/nofp",
+						"C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/c++/12.3.1/backward",
+						"C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/12.3.1/include",
+						"C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/12.3.1/include-fixed",
+						"C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include"
+					],
+					"linkDirectories" : 
+					[
+						"C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m/nofp",
+						"C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/arm-none-eabi/lib/thumb/v7e-m/nofp",
+						"C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/12.3.1",
+						"C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/lib/gcc",
+						"C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/arm-none-eabi/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"stdc++_nano",
+						"m",
+						"gcc",
+						"g_nano",
+						"c_nano",
+						"gcc",
+						"c_nano",
+						"nosys",
+						"gcc",
+						"c_nano",
+						"nosys"
+					]
+				},
+				"path" : "C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe",
+				"version" : "12.3.1"
+			},
+			"language" : "CXX",
+			"sourceFileExtensions" : 
+			[
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm",
+				"ccm",
+				"cxxm",
+				"c++m"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

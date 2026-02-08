@@ -6,7 +6,7 @@
 
 FinsROV is a low-cost, open-source Underwater robot platform designed for underwater task and research in robotics and AI.
 
-FinsROV是一台开源的低成本水下机器人平台，面向AI和机器人领域中的水下任务和研究针对性设计。八推进器结构有效的保证了机器人全向运动的的灵活性，双云台平台提供了充足的
+FinsROV是一台开源的低成本水下机器人平台，面向AI和机器人领域中的水下任务和研究针对性设计。八推进器结构有效的保证了机器人全向运动的的灵活性，双云台平台提供了充足的硬件扩展空间，
 
 ## Overview
 
@@ -40,20 +40,22 @@ $ pip install pyserial pygame
 确认控制口的USB的COM号（可以在设备管理器里的端口（COM和LPT）项中查看），并在程序中进行修改
 如果使用V3.3之前的普通usb相机版本，请运行7-usbCameraFullControl文件； 如果使用的是V3.3网络相机版本，请运行10-webCameraCombinedControl文件。
 
-## Video
+## Video 
+only chinese educate
 
 How to bulid the robot platform:
 
-coding:
+controller coding:
 
 basic theory about underwater robot:[【面向水下机器人的动力学与运动学建模及控制器分析】](https://www.bilibili.com/video/BV1VXmQBRE2a/?share_source=copy_web&vd_source=898a23397484d4386766c76dfa58679f)
 
-demo:
+demo:[【目前可公开的情报：FINS第一代水下机器人】](https://www.bilibili.com/video/BV1oC41177Rn/?share_source=copy_web&vd_source=e6237e17b71511df8920049cd998c076)
 
 
 
 ## Citation
 If you find this code useful, we would appreciate if you would cite our paper:
+
 如果你觉得我们的开源项目能够帮助到你，欢迎你引用我们的文章！并持续关注我们的后续研究：
 ```
 @article{xu2025aucamp,
