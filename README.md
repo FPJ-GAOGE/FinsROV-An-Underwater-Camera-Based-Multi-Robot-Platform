@@ -24,6 +24,7 @@ FinsROV是一台开源的低成本水下机器人平台，面向AI和机器人�
     </tr>
   </thead>
   <tbody>
+    
     <!-- 规格部分：合并4行单元格 -->
     <tr>
       <td rowspan="4"><strong>Specifications</strong></td>
