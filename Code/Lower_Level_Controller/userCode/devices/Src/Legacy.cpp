@@ -46,7 +46,7 @@ void bsp_ADC_vccMoni(){
 }
 
 /**
- * @brief 利用串口重定向函数，可选usb虚拟串口或硬件串口，使用需安装相应驱动
+ * @brief // Using the UART redirection function, either a USB virtual COM port or a hardware UART can be selected; the corresponding driver must be installed for operation. //利用串口重定向函数，可选usb虚拟串口或硬件串口，使用需安装相应驱动
  * @param fmt
  * @param ...
  */

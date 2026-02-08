@@ -20,6 +20,12 @@ void PID::Reset(PID_Regulator_t *pidRegulator) {
 }
 
 /**
+ * Compute the PID control output.
+ * @param target   /Reference (setpoint) value.
+ * @param feedback /Feedback (measured) value.
+ * @return /Control output.
+ */
+/**
  * 计算pid算法的控制量
  * @param target 目标量
  * @param feedback 反馈量

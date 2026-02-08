@@ -22,17 +22,18 @@ void IMU::Init()
         Error_Handler();
 #endif
     // BMI088_read(raw_data.gyro, raw_data.accel, &raw_data.temp);
- 
+		
+		// After a reset, the accelerometer defaults to suspend mode. These nine lines write the value 0x04 to register address 0x7D, switching the accelerometer to normal mode.
     //加速度计复位后默认是暂停模式，这9行代码，向地址0x7D处写入0x04值，使加速度计进入正常模式
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);    //PA4置0，片选加速度计
-    uint8_t data = (0x7D & 0x7F);    //Bit #0和Bit #1-7，Bit #0是0，表示写
+    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);    // Set PA4 to low to assert the accelerometer chip select.  //PA4置0，片选加速度计
+    uint8_t data = (0x7D & 0x7F);    // For Bit #0 and Bits #1–7: Bit #0 = 0 indicates a write operation.   //Bit #0和Bit #1-7，Bit #0是0，表示写
     HAL_SPI_Transmit(&hspi1, &data, 1, 1000);
-    while(HAL_SPI_GetState(&hspi1)==HAL_SPI_STATE_BUSY_TX);    //等待SPI发送完成
+    while(HAL_SPI_GetState(&hspi1)==HAL_SPI_STATE_BUSY_TX);    // Wait until SPI transmission completes. // 等待SPI发送完成
     data = 0x04;    //Bit #8-15
     HAL_SPI_Transmit(&hspi1, &data, 1, 1000);
-    while(HAL_SPI_GetState(&hspi1)==HAL_SPI_STATE_BUSY_TX);    //等待SPI发送完成
-    HAL_Delay(1);    //延时1ms
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);    //PA4置1，取消片选加速度计
+    while(HAL_SPI_GetState(&hspi1)==HAL_SPI_STATE_BUSY_TX);    // Wait until SPI transmission completes. // 等待SPI发送完成
+    HAL_Delay(1);    // Delay for 1 ms. //延时1ms
+    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);    // Set PA4 to high to deassert the accelerometer chip select. // PA4置1，取消片选加速度计
 
 
     PID_Regulator_t _tempPID(1500, 0.08, 0, MPU6500_TEMP_PWM_MAX, MPU6500_TEMP_PWM_MAX, 0, MPU6500_TEMP_PWM_MAX);
@@ -63,14 +64,16 @@ void IMU::Init()
 
 void IMU::Handle()
 {
+		// Normal operation.
     // 普通使用
     // BMI088_read(raw_data.gyro, raw_data.accel, &raw_data.temp);
-    // ist8310_read_mag(raw_data.mag);    //读取磁力计数据，存储在mag中
+    // ist8310_read_mag(raw_data.mag);    // Read magnetometer data and store it in `mag`. //读取磁力计数据，存储在mag中
     // offset_correction();
-    // MahonyAHRSupdate(pro_data.ins_quat, pro_data.gyro[0], pro_data.gyro[1], pro_data.gyro[2], pro_data.accel[0], pro_data.accel[1], pro_data.accel[2], pro_data.mag[0], pro_data.mag[1], pro_data.mag[2]);    //对得到的加速度计、陀螺仪和磁力计数据进行计算得到四元数，直接在数组quat中更新
-	// // MahonyAHRSupdateIMU(pro_data.ins_quat, pro_data.gyro[0], pro_data.gyro[1], pro_data.gyro[2], pro_data.accel[0], pro_data.accel[1], pro_data.accel[2]);    //对得到的加速度计、陀螺仪数据进行计算得到四元数，直接在数组quat中更新
-	// get_angle(pro_data.ins_quat, pro_data.ins_angle, pro_data.ins_angle+1, pro_data.ins_angle+2);    //对四元数计算得到弧度制欧拉角，直接在INS_angle数组中更新
+    // MahonyAHRSupdate(pro_data.ins_quat, pro_data.gyro[0], pro_data.gyro[1], pro_data.gyro[2], pro_data.accel[0], pro_data.accel[1], pro_data.accel[2], pro_data.mag[0], pro_data.mag[1], pro_data.mag[2]);    // Compute the quaternion from the acquired accelerometer, gyroscope, and magnetometer measurements, and update it in-place in the `quat` array. //对得到的加速度计、陀螺仪和磁力计数据进行计算得到四元数，直接在数组quat中更新
+	// // MahonyAHRSupdateIMU(pro_data.ins_quat, pro_data.gyro[0], pro_data.gyro[1], pro_data.gyro[2], pro_data.accel[0], pro_data.accel[1], pro_data.accel[2]);    // Compute the quaternion from the acquired accelerometer and gyroscope measurements, and update it in-place in the `quat` array. //对得到的加速度计、陀螺仪数据进行计算得到四元数，直接在数组quat中更新
+	// get_angle(pro_data.ins_quat, pro_data.ins_angle, pro_data.ins_angle+1, pro_data.ins_angle+2);    // Compute Euler angles (in radians) from the quaternion, and update them in-place in the `INS_angle` array. //对四元数计算得到弧度制欧拉角，直接在INS_angle数组中更新
 
+		// Enable DMA transfer for the IMU.
     // 开启IMU DMA传输
     if (dma_state == IMU_DMA_IDLE)
     {
@@ -169,11 +172,13 @@ void IMU::DMA_IT_Handle()
             imu_temp_control(raw_data.temp);
             ist8310_read_mag(raw_data.mag);
             offset_correction();
-            MahonyAHRSupdate(pro_data.ins_quat, pro_data.gyro[0], pro_data.gyro[1], pro_data.gyro[2], pro_data.accel[0], pro_data.accel[1], pro_data.accel[2], pro_data.mag[0], pro_data.mag[1], pro_data.mag[2]);    //对得到的加速度计、陀螺仪和磁力计数据进行计算得到四元数，直接在数组quat中更新
-            // MahonyAHRSupdateIMU(pro_data.ins_quat, pro_data.gyro[0], pro_data.gyro[1], pro_data.gyro[2], pro_data.accel[0], pro_data.accel[1], pro_data.accel[2]);    //对得到的加速度计、陀螺仪数据进行计算得到四元数，直接在数组quat中更新
-            get_angle(pro_data.ins_quat, pro_data.ins_angle, pro_data.ins_angle+1, pro_data.ins_angle+2);    //对四元数计算得到弧度制欧拉角，直接在INS_angle数组中更新
+            MahonyAHRSupdate(pro_data.ins_quat, pro_data.gyro[0], pro_data.gyro[1], pro_data.gyro[2], pro_data.accel[0], pro_data.accel[1], pro_data.accel[2], pro_data.mag[0], pro_data.mag[1], pro_data.mag[2]);    // Compute the quaternion from the acquired accelerometer, gyroscope, and magnetometer measurements, and update it in-place in the `quat` array. //对得到的加速度计、陀螺仪和磁力计数据进行计算得到四元数，直接在数组quat中更新
+            // MahonyAHRSupdateIMU(pro_data.ins_quat, pro_data.gyro[0], pro_data.gyro[1], pro_data.gyro[2], pro_data.accel[0], pro_data.accel[1], pro_data.accel[2]);   //Compute the quaternion from the acquired accelerometer and gyroscope measurements, and update it in-place in the `quat` array. //对得到的加速度计、陀螺仪数据进行计算得到四元数，直接在数组quat中更新
+            get_angle(pro_data.ins_quat, pro_data.ins_angle, pro_data.ins_angle+1, pro_data.ins_angle+2);    // Compute Euler angles (in radians) from the quaternion, and update them in-place in the `INS_angle` array. //对四元数计算得到弧度制欧拉角，直接在INS_angle数组中更新
             attitude_update();
-            // 测试输出
+            
+						// Output test
+						// 测试输出
             if (PressureSensor::pressure_sensor.ps_state == PS_HANDLE_STATE::CALCULATE)
             {
             // send_float(pro_data.ins_angle[0]*180/PI, 2, 0);
@@ -194,6 +199,7 @@ void IMU::DMA_IT_Handle()
     }
 }
 
+// DMA transfer-complete interrupt.
 // DMA传输完成中断
 void DMA2_Stream0_IRQHandler(void)
 {
@@ -229,13 +235,14 @@ void IMU::imu_temp_control(float temp)
     }
     else
     {
+				// in beginning, max power
         // 在没有达到设置的温度，一直最大功率加热
-        // in beginning, max power
         if (temp > IMU_TARGET_TEMP)
         {
             temp_constant_time++;
             if (temp_constant_time > 200)
             {
+								// Once the target temperature is reached, set the integral term to half of the maximum power to accelerate convergence.
                 // 达到设置温度，将积分项设置为一半最大功率，加速收敛
                 first_temperate = 1;
                 tempPid.PIDInfo.componentKiMax = MPU6500_TEMP_PWM_MAX / 2.0f;
@@ -252,7 +259,7 @@ void IMU::IMU_temp_PWM(uint16_t pwm)
 }
 
 /**
- * @brief 测得陀螺仪和加速度计零偏值，存入raw_data.accel_offset和raw_data.gyro_offset数组
+ * @brief Measure the gyroscope and accelerometer biases and store them in the `raw_data.accel_offset` and `raw_data.gyro_offset` arrays. 测得陀螺仪和加速度计零偏值，存入raw_data.accel_offset和raw_data.gyro_offset数组
  * @param accel
  * @param _accel
  */
@@ -292,7 +299,8 @@ void IMU::offset_correction()
 
 void IMU::attitude_update()
 {
-    // V4 ins_angle 012对应yaw，pitch，roll
+		// `ins_angle[0]`, `ins_angle[1]`, and `ins_angle[2]` correspond to yaw, pitch, and roll, respectively.
+    // ins_angle 012对应yaw，pitch，roll
     attitude.yaw = pro_data.ins_angle[0];
     attitude.pitch = pro_data.ins_angle[1];
     attitude.roll = pro_data.ins_angle[2];

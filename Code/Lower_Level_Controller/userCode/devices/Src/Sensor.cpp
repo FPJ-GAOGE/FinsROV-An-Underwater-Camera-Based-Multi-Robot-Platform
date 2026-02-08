@@ -13,6 +13,7 @@ KalmanFilter Pressure_Kf[4] = {KalmanFilter(0.01, 0.05, 1.0, 0.0),
 void PressureSensor::Init()
 {
 
+		// ------ TODO: 3D coordinates of the four pressure sensors. These values must be obtained via measurement and updated accordingly.
     //------TODO:4个水压计三维坐标，由测量得到，需要修改
     Sensor_Site_t _site = {
         .x = {-12, 12, 12, -12},
@@ -60,7 +61,7 @@ void PressureSensor::Handle()
 
     if (flag_calibrate)
     {
-        Calibrate(); // 校准
+        Calibrate(); // Calibration 校准
         flag_calibrate = false;
     }
     else
@@ -251,6 +252,7 @@ void PressureSensor::Init_single(int id)
         MS5837_30BA_PROM(id);
         flag_ok[id] = MS5837_30BA_Crc4(id);
     }
+		// ------ TODO: Update the bias values here after receiving the calibration data.
     //------TODO:收到校准数据后修改此处零偏值
     /*
         for(int i=0;i<4;++i){
@@ -383,7 +385,7 @@ void PressureSensor::Handle_single(int id)
 
     data_pressure_raw[id] = MS5837_30BA_GetData(id);
     float temp = data_pressure_raw[id] - data_pressure_offset[id];
-    temp = Pressure_Kf[id].update(temp); // 卡尔曼滤波
+    temp = Pressure_Kf[id].update(temp); // First-order low-pass filtering. // 一阶低通滤波
     data_pressure[id] = temp;
 
     // if (temp < 500 && temp > -10)
@@ -393,6 +395,7 @@ void PressureSensor::Handle_single(int id)
     // if(data_pressure[id]>200||data_pressure[id]<-10) data_pressure[id]=last_measure[id]- data_pressure_offset[id];
 }
 
+// Following the approach of `Handle_single`, overall efficiency is improved by overlapping the wait time after the first I2C request.
 // 仿照Handle_single的思路，通过重叠I2C第一次请求后的等待时间实现整体效率提高
 void PressureSensor::Handle_all()
 {
@@ -401,11 +404,12 @@ void PressureSensor::Handle_all()
     static uint8_t command_pres = MS5837_30BA_D1_OSR1024;
     static uint8_t temp[3];
     static float tmp_pres;
-    static unsigned long conversion[8];    //conversion的前四位存储温度数据，后四位存储水压信息
+    static unsigned long conversion[8];    // The upper four bits of `conversion` store temperature data, and the lower four bits store pressure information. //conversion的前四位存储温度数据，后四位存储水压信息
 
     switch (ps_state) {
         case PS_HANDLE_STATE::GET_TEMPERATURE:
-            // 告知传感器准备温度数据
+            // Notify the sensor to prepare temperature data.
+						// 告知传感器准备温度数据
             for (int i = 0; i < SENSOR_NUM; ++i)
             {
                 TCA_SetChannel(i);
@@ -415,7 +419,8 @@ void PressureSensor::Handle_all()
             break;
 
         case PS_HANDLE_STATE::GET_PRESSURE:
-            // 收集温度信息
+            // Acquire temperature information.
+						// 收集温度信息
             for (int i = 0; i < SENSOR_NUM; ++i)
             {
                 TCA_SetChannel(i);
@@ -424,6 +429,7 @@ void PressureSensor::Handle_all()
                 conversion[i] = (unsigned long)temp[0] * 65536 + (unsigned long)temp[1] * 256 + (unsigned long)temp[2];
             }
 
+						// Notify the sensor to prepare pressure data.
             // 告知传感器准备压强数据
             for (int i = 0; i < SENSOR_NUM; ++i)
             {
@@ -434,7 +440,8 @@ void PressureSensor::Handle_all()
             break;
 
         case PS_HANDLE_STATE::CALCULATE:
-            // 获取压强数值
+            // Retrieve the pressure readings.
+						// 获取压强数值
             for (int i = 0; i < SENSOR_NUM; ++i)
             {
                 TCA_SetChannel(i);
@@ -443,6 +450,7 @@ void PressureSensor::Handle_all()
                 conversion[i+4] = (unsigned long)temp[0] * 65536 + (unsigned long)temp[1] * 256 + (unsigned long)temp[2];
             }
 
+						// Refer to `float PressureSensor::MS5837_30BA_GetData(int id)` to compute the four raw pressure values.
             // 参考float PressureSensor::MS5837_30BA_GetData(int id)计算四个原始压强
             float pressure[4];
             for (int i = 0; i < SENSOR_NUM; ++i)
@@ -477,12 +485,13 @@ void PressureSensor::Handle_all()
                 //     return -1;
             }
 
+				// Assign the raw pressures to `data_pressure_raw`, then compute and assign the processed values to `data_pressure`.
         // 把原始压强赋值给data_pressure_raw，计算后给data_pressure赋值
         for (int i = 0; i < SENSOR_NUM; ++i)
         {
             data_pressure_raw[i] = pressure[i];
             tmp_pres = data_pressure_raw[i] - data_pressure_offset[i];
-            tmp_pres = Pressure_Kf[i].update(tmp_pres); // 卡尔曼滤波
+            tmp_pres = Pressure_Kf[i].update(tmp_pres); // First-order low-pass filtering. // 一阶低通滤波
             data_pressure[i] = tmp_pres;
         }
         ps_state = PS_HANDLE_STATE::GET_TEMPERATURE;

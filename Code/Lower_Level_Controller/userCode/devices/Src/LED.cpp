@@ -31,6 +31,11 @@ void LED::aRGB_led_show(uint32_t aRGB){
 
 }
 
+
+/**
+ * @brief Running-light (LED chaser) function; must be invoked periodically.
+ * @param period /Cycle period of the running-light pattern.
+ */
 /**
  * @brief 跑马灯函数，需周期性调用
  * @param period 跑马灯循环周期
@@ -45,7 +50,7 @@ void LED::aRGB_led_change(uint32_t period){
     blue = ((aRGB_value & 0x000000FF) >> 0) ;
 
     float interval = HAL_GetTick()- lastTick;
-    if(lastTick == 0){//处理首次进入
+    if(lastTick == 0){// Handle the first entry into this state. //处理首次进入
         lastTick = HAL_GetTick();
         return;
     }

@@ -8,12 +8,13 @@
 #include <cmath>
 
 // V33
-std::array<int8_t, 8> Sign = {1, -1, 1, 1, -1, -1, 1, -1}; // 推进器正反桨，正1反-1，序号为推进器序号
-std::array<uint8_t, 4> InID = {1, 2, 6, 5};                // V33-1,2内部的4个推进器接到扩展板上的序号，左前-左后-右前-右后
-std::array<uint8_t, 4> OutID = {0, 3, 7, 4};               // V33-1,2外部的4个推进器接到扩展板上的序号，左前-左后-右前-右后
-int32_t InitPWM = 1610; // 推进器初始化的PWM（V33-0,1）
-//int32_t InitPWM = 1540; // 推进器初始化的PWM（V33-2）
-std::array<int32_t, 8> Compensation = {50, 50, 50, 50, 50, 50, 50, 50}; // 死区补偿值
+std::array<int8_t, 8> Sign = {1, -1, 1, 1, -1, -1, 1, -1}; // Mark propeller direction: Clockwise = 1, Counter-Clockwise = -1.; the index corresponds to the propeller ID. // 推进器正反桨，正1反-1，序号为推进器序号
+std::array<uint8_t, 4> InID = {1, 2, 6, 5};                // V33-1,2 Channel indices on the expansion board for the four internal thrusters: front-left, rear-left, front-right, rear-right. //内部的4个推进器接到扩展板上的序号，左前-左后-右前-右后
+std::array<uint8_t, 4> OutID = {0, 3, 7, 4};               // V33-1,2 Channel indices on the expansion board for the four external thrusters: front-left, rear-left, front-right, rear-right. //外部的4个推进器接到扩展板上的序号，左前-左后-右前-右后
+int32_t InitPWM = 1610; // Initial PWM value for thruster initialization. // 推进器初始化的PWM（V33-0,1）
+//int32_t InitPWM = 1540; // Initial PWM value for thruster initialization. //推进器初始化的PWM（V33-2）
+std::array<int32_t, 8> Compensation = {50, 50, 50, 50, 50, 50, 50, 50}; // Dead-zone compensation value. // 死区补偿值
+// Vertical thrusters.
 // 垂直推进器
 std::array<int32_t, 4> FloatPWM = {
     InitPWM,
@@ -21,6 +22,7 @@ std::array<int32_t, 4> FloatPWM = {
     InitPWM,
     InitPWM - Sign[InID[3]] * 90
 };
+// Horizontal thrusters.
 // 水平推进器
 uint8_t longitudinal_speed = 80;
 uint8_t lateral_speed = 80;
@@ -71,7 +73,6 @@ PID_Regulator_t YawInPID(5, 0, 0, 200, 100, 100, 400);
 PID_Regulator_t YawOutPID(2, 0.01, 2, 10, 5, 5, 20);
 PID_Regulator_t RollInPID(8, 0, 0, 100, 50, 50, 200);
 PID_Regulator_t RollOutPID(0.5, 0.002, 1, 5, 2.5, 2.5, 10);
-// 水压计
 PID_Regulator_t PitchInPID(8, 0, 0, 100, 50, 50, 200);
 PID_Regulator_t PitchOutPID(1, 0.005, 1, 5, 2.5, 2.5, 10);
 // IMU
@@ -142,20 +143,23 @@ void Propeller_I2C::Init()
     state_PWM_map[CLOCKWISE]     = Parameter.ClockwisePWM;
     state_PWM_map[ANTICLOCKWISE] = Parameter.AnticlockwisePWM;
 
-    TCA_SetChannel(4); // 1路 I2C 扩展为 8路
+    TCA_SetChannel(4);  // Expand a single I2C bus into eight channels. // 1路 I2C 扩展为 8路
     HAL_Delay(5);
     PCA_Write(PCA9685_MODE1, 0x0);
     PCA_Setfreq(50); // Hz
     for (int i = 0; i < PROPELLER_NUM; ++i)
     {
         current_PWM[i] = Parameter.InitPWM;
-        //------TODO：i为推进器在扩展版上的接口编号，根据接线修改，目前为0-7号
+				
+				// ------ TODO: `i` denotes the thruster channel index on the expansion board. Update this mapping according to the wiring; currently set to channels 0–7.
+        //------TODO：i为推进器在扩展板上的接口编号，根据接线修改，目前为0-7号
         PCA_Setpwm(i, 0, floor(current_PWM[i] * 4096 / 20000 + 0.5f));
     }
 
     HAL_UARTEx_ReceiveToIdle_IT(&huart6, RxBuffer, SERIAL_LENGTH_MAX);
 };
 
+// Configure the PWM parameters according to UART commands.
 // 根据串口指令设置PWM参数
 void Propeller_I2C::Receive()
 {
@@ -170,6 +174,7 @@ void Propeller_I2C::Receive()
     }
     if (flag_float)
     {
+			// Update the PWM outputs of the four outer-ring motors for front/back/left/right motion (open-loop motion is possible when yaw-angle control is disabled).
         // 外圈四个电机更新为前后左右运动的PWM(在没有yaw角控制的情况下可开环运动)
         if (strncmp((char *)RxBuffer, "DN", 2) == 0)
         {
@@ -200,6 +205,7 @@ void Propeller_I2C::Receive()
             // }
         }
 
+				// Disable PID control and reset the PWM outputs to their initial values.
         // 关闭PID控制，更新为初始的PWM
         else if (strncmp((char *)RxBuffer, "OFF", 3) == 0)
         {
@@ -249,7 +255,7 @@ void Propeller_I2C::Receive()
         //     Target_yaw = data_receive[2] * 3.14 / 180;
         // }
 
-        // // 更新Yaw角度
+        // Update Yaw. //更新Yaw角度
         else if (strncmp((char *)RxBuffer, "RPY:", 4) == 0)
         {
             if (strncmp((char *)RxBuffer, "RPY:ON", 6) == 0){
@@ -285,7 +291,7 @@ void Propeller_I2C::Receive()
         //     }
         // }
 
-        // 更新深度
+        // Update Depth. //更新深度
         else if (strncmp((char *)RxBuffer, "H:", 2) == 0)
         {
             char *data_str = (char *)RxBuffer + 2;
@@ -295,6 +301,7 @@ void Propeller_I2C::Receive()
 
     else
     {
+				// Enable PID control and initialize the PWM outputs to their default values.
         // 开启PID控制，更新为初始PWM
         if (strncmp((char *)RxBuffer, "ON", 2) == 0)
         {
@@ -330,8 +337,8 @@ void Propeller_I2C::float_ctrl()
 {
         PWM_component.Depth = DepthPID.PIDCalc(Target_depth, PressureSensor::pressure_sensor.data_depth);
 
-        // pid for roll
-        // ps_state控制双环频率比为3:1
+        // pid for roll and pitch
+        // `ps_state` sets the frequency ratio between the outer and inner control loops to 3:1. //ps_state控制双环频率比为3:1
         if (PressureSensor::pressure_sensor.ps_state == PS_HANDLE_STATE::CALCULATE)
         {
             // roll_diff = PressureSensor::pressure_sensor.data_roll;
@@ -344,7 +351,7 @@ void Propeller_I2C::float_ctrl()
             Target_pitch_v = PitchOutPID.PIDCalc(Target_pitch, PressureSensor::pressure_sensor.data_pitch);
         }
         // PWM_component.Roll = RollInPID.PIDCalc(Target_roll_v, IMU::imu.attitude.roll_v); // IMU
-        PWM_component.Roll = RollInPID.PIDCalc(Target_roll_v, IMU::imu.attitude.neg_roll_v); // 水压计
+        PWM_component.Roll = RollInPID.PIDCalc(Target_roll_v, IMU::imu.attitude.neg_roll_v); 
         PWM_component.Pitch = PitchInPID.PIDCalc(Target_pitch_v, IMU::imu.attitude.pitch_v);
 }
 
@@ -352,6 +359,7 @@ void Propeller_I2C::speed_ctrl()
 {
 }
 
+// Dual-loop PID control for yaw angle.
 // 双环pid控制Yaw角
 void Propeller_I2C::angle_ctrl()
 {
@@ -371,6 +379,7 @@ float Propeller_I2C::rad2deg(float rad){
     return rad * 180 / PI;
 }
 
+// PWM allocation for the internal (vertical-axis) thrusters.
 // 垂直方向（内）推进器PWM分配
 void Propeller_I2C::vertical_PWM_allocation()
 {
@@ -378,10 +387,10 @@ void Propeller_I2C::vertical_PWM_allocation()
         float_ctrl();
 
         constexpr int8_t factors[4][3] = {
-        {-1, -1, -1},  // 电机0
-        {-1, -1,  1},  // 电机1
-        {-1,  1, -1},  // 电机2
-        {-1,  1,  1}   // 电机3
+        {-1, -1, -1},  // Motor0
+        {-1, -1,  1},  // Motor1
+        {-1,  1, -1},  // Motor2
+        {-1,  1,  1}   // Motor3
         };
 
         float depth = PWM_component.Depth;
@@ -396,7 +405,7 @@ void Propeller_I2C::vertical_PWM_allocation()
             int32_t comp = Parameter.Compensation[idx];
             int32_t pwm = base - sign * (depth * factors[i][0] + roll * factors[i][1] + pitch * factors[i][2]);
             if (pwm > Parameter.InitPWM) pwm += comp;
-            else if(pwm < Parameter.InitPWM) pwm -= comp; // 补偿电机死区
+            else if(pwm < Parameter.InitPWM) pwm -= comp; // Compensate for the motor dead zone. // 补偿电机死区
             current_PWM[idx] = pwm;
         }
     }
@@ -407,6 +416,7 @@ void Propeller_I2C::vertical_PWM_allocation()
     }
 }
 
+// PWM allocation for the horizontal-axis thrusters.
 // 水平方向推进器PWM分配
 void Propeller_I2C::horizontal_PWM_allocation()
 {
@@ -427,7 +437,7 @@ void Propeller_I2C::horizontal_PWM_allocation()
 					int32_t comp = Parameter.Compensation[idx];
 					int32_t pwm = base + ((i<2) ? sign : - sign) * yaw;
 					if (pwm > Parameter.InitPWM) pwm += comp;
-					else if(pwm < Parameter.InitPWM) pwm -= comp; // 补偿电机死区
+					else if(pwm < Parameter.InitPWM) pwm -= comp; // Compensate for the motor dead zone. // 补偿电机死区
 					current_PWM[idx] = pwm;
 			}
 		}

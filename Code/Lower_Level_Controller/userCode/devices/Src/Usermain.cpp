@@ -1,6 +1,11 @@
 //
 // Created by LEGION on 2021/10/4.
 //
+//This file contains the main function and the interrupt service routines (ISRs).
+//The usage of each module follows three steps: initialization, data acquisition, and execution.
+//Initialization and execution are performed within the timer interrupt routine.
+//Serial (UART) data reception is handled within the UART interrupt routine.
+//
 //此文件为主函数和中断服务函数所在地
 //每个元件的使用包含三个步骤，初始化、获取数据、执行
 //初始化和执行在定时器中断函数进行
@@ -18,8 +23,12 @@
 #include "UART_Base.h"
 
 
-VERSION_E Robot_Version = V33;//根据潜器版本调整，V30，V31，V32，V33，V40
+//Adjust according to the vehicle version: V30, V31, V32, V33, V40.
+//根据潜器版本调整，V30，V31，V32，V33，V40
+VERSION_E Robot_Version = V33;
 
+
+// Statically instantiated objects.
 // 静态实例化对象
 // IMU imu;
 static Servo servo;
@@ -30,20 +39,24 @@ static Watchdog watchdog;
 static LED led;
 static Buzzer buzzer;
 
+
+// Array of device pointers for unified management and invocation of device operations.
+// ------ TODO: Select the required devices.
 // 设备指针数组，用于统一管理和调用设备操作
 //------TODO:选用需要的设备
 static Device *device[] = {
-        &IMU::imu,                         //imu
-        &PressureSensor::pressure_sensor,  //水压计
-        &propeller_i2c,                    //推进器（扩展板pwm控制）
-        //&propeller,                      //推进器（C板pwm控制）
-        &servo_i2c,                        //舵机（扩展版pwm控制）
-        //&servo,                          //舵机（c板pwm控制）
-        //&watchdog,                       //看门狗
-        &led,                              //LED灯
-        //&buzzer                            //蜂鸣器
+        &IMU::imu,                         //IMU 
+        &PressureSensor::pressure_sensor,  //Pressure Sensor 水压计
+        &propeller_i2c,                    //Propeller（PWM control via the PWM expansion board） 推进器（PWM扩展板控制）
+        //&propeller,                      //Propeller（PWM control via the Robomaster_C board） 推进器（C板PWM控制）
+				&servo_i2c,                        //Servo（PWM control via the PWM expansion board） 舵机（PWM扩展板控制）
+				//&servo,                          //Servo（PWM control via the Robomaster_C board） 舵机（C板PWM控制）
+        //&watchdog,                       //Watchdog 窗口看门狗
+        &led,                              //LED
+        //&buzzer                          //Buzzer 蜂鸣器
 };
 
+// Macro definition for the number of devices.
 // 定义设备数量宏
 #define DEVICE_NUM (sizeof(device) / sizeof(device[0]))
 
@@ -54,6 +67,7 @@ volatile uint8_t key_raw_state = 1;
 uint32_t key_last_stamp;
 volatile int32_t time_start = 0, time_end = 0, time_interval = 0, cnt = 0;
 
+// Timer interrupt service routine (ISR) for periodic device processing.
 // 定时器中断服务函数, 用于周期性处理设备
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
@@ -63,6 +77,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     }
 }
 
+// UART receive interrupt service routine (ISR) for handling device-specific UART reception tasks.
 // 串口接收中断服务函数, 用于处理设备的串口接收任务
 void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t datasize)//HAL_UART_RxCpltCallback
 {
@@ -84,11 +99,13 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t datasize)//H
         }
         
         std::memset(RxBuffer, 0, SERIAL_LENGTH_MAX);
-        // 重新开启接收
+        // Re-enable UART reception.
+				// 重新开启接收
         HAL_UARTEx_ReceiveToIdle_IT(&huart6, RxBuffer, SERIAL_LENGTH_MAX);
     }
 }
 
+// UART transmit interrupt callback function.
 // 串口发送中断回调函数
 void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart) {
     #define HANDLE_UART_TX(ID)                            \
@@ -111,6 +128,7 @@ void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart) {
     // }
 }
 
+// Key/button interrupt (currently unused).
 // 按键中断，暂时无用
 // void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
 //     if(system_init_flag == 0)return;
@@ -133,6 +151,7 @@ void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart) {
   * @brief  The application entry point.
   * @retval int
   */
+// Entry point of the main function.
 // 主函数入口
 int main(void)
 {
@@ -188,11 +207,13 @@ int main(void)
     HAL_TIM_Base_Start_IT(&htim6);
     HAL_TIM_Base_Start_IT(&htim7);
 
+		// Initialize all devices.
     // 初始化所有设备
     for(int i = 0; i < DEVICE_NUM; ++i){
         device[i] -> Init();
     }
-
+		
+		// Set the initialization-complete flag.
     // 设置初始化完成标志
     system_init_flag = true;
     time_start = HAL_GetTick();
@@ -223,7 +244,8 @@ void send_float(float value, uint8_t decimalPlaces, bool endSign){
     bool isNegative = 0;
     uint8_t len = 0;
     static char buffer_float[20] = {0};
-
+		
+		// Handle negative values.
     // 处理负数
     if(value < 0){
         isNegative = 1;
@@ -234,10 +256,12 @@ void send_float(float value, uint8_t decimalPlaces, bool endSign){
         len = 1;
     }
 
+		// Convert the integer part.
     // 转换整数部分
     int32_t intPart = (int)value;
     len += sprintf(buffer_float+len, "%d", intPart);
-
+		
+		// Process the fractional part.
     // 处理小数部分
     if (decimalPlaces > 0) {
         buffer_float[len++] = '.';
@@ -251,9 +275,10 @@ void send_float(float value, uint8_t decimalPlaces, bool endSign){
         }
     }
 
+		// If this is the final element, append a newline; otherwise, append a comma.
     // 若结束则换行，否则是逗号
     if(endSign)
-        buffer_float[len++] = '\n'; // 字符串结束符
+        buffer_float[len++] = '\n'; // Null terminator of the string 字符串结束符
     else
         buffer_float[len++] = ',';
 
@@ -268,6 +293,7 @@ void send_int(int32_t value, bool endSign){
     uint8_t len = 0;
     bool isNegative = 0;
 
+		// Handle negative values.
     // 处理负数
     if(value < 0){
         isNegative = 1;
