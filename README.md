@@ -45,7 +45,18 @@ FinsROV是一台开源的低成本水下机器人平台，面向AI和机器人�
       <td>10-20m (Passed internal pressure test)</td>
       <td>Passed internal pressure test</td>
     </tr>
-
+  </tbody>
+</table>|
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Sub-item</th>
+      <th>Parameter</th>
+      <th>Supplementary Note</th>
+    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td rowspan="6"><strong>Power System</strong></td>
       <td>Maximum Acceleration in Still Water</td>
