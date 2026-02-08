@@ -14,82 +14,73 @@ FinsROV是一台开源的低成本水下机器人平台，面向AI和机器人�
 
 ## Parameters
 
-<table>
+<table style="width:100%; border-collapse: collapse;">
   <thead>
-    <tr>
-      <th>Category</th>
-      <th>Sub-item</th>
-      <th>Parameter</th>
-      <th>Supplementary Note</th>
+    <tr style="border: 1px solid #ddd;">
+      <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Category</th>
+      <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Sub-item</th>
+      <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Parameter</th>
+      <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Supplementary Note</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td rowspan="4"><strong>Specifications</strong></td>
-      <td>Dimensions (Length × Width × Height)</td>
-      <td>40cm*35cm*15cm</td>
-      <td>-</td>
+    <!-- 规格部分 -->
+    <tr style="border: 1px solid #ddd;">
+      <td rowspan="4" style="border: 1px solid #ddd; padding: 8px; background-color: #f5f5f5;"><strong>Specifications</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Dimensions (Length × Width × Height)</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">40cm*35cm*15cm</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">-</td>
     </tr>
-    <tr>
-      <td>Power & Endurance Time</td>
-      <td>Approx. 13.75W, Approx. 2h</td>
-      <td>Adapted to RC model batteries with xt30/60 interface</td>
+    <tr style="border: 1px solid #ddd;">
+      <td style="border: 1px solid #ddd; padding: 8px;">Power & Endurance Time</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Approx. 13.75W, Approx. 2h</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Adapted to RC model batteries with xt30/60 interface</td>
     </tr>
-    <tr>
-      <td>Weight in Air</td>
-      <td>4.33Kg(v3.0), 4.85Kg(v3.1)</td>
-      <td>-</td>
+    <tr style="border: 1px solid #ddd;">
+      <td style="border: 1px solid #ddd; padding: 8px;">Weight in Air</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">4.33Kg(v3.0), 4.85Kg(v3.1)</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">-</td>
     </tr>
-    <tr>
-      <td>Operating Depth</td>
-      <td>10-20m (Passed internal pressure test)</td>
-      <td>Passed internal pressure test</td>
+    <tr style="border: 1px solid #ddd;">
+      <td style="border: 1px solid #ddd; padding: 8px;">Operating Depth</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">10-20m (Passed internal pressure test)</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Passed internal pressure test</td>
     </tr>
-  </tbody>
-</table>|
-<table>
-  <thead>
-    <tr>
-      <th>Category</th>
-      <th>Sub-item</th>
-      <th>Parameter</th>
-      <th>Supplementary Note</th>
+
+    <!-- 动力系统部分 -->
+    <tr style="border: 1px solid #ddd;">
+      <td rowspan="6" style="border: 1px solid #ddd; padding: 8px; background-color: #f5f5f5;"><strong>Power System</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Maximum Acceleration in Still Water</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">4.6m/s²</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">-</td>
     </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="6"><strong>Power System</strong></td>
-      <td>Maximum Acceleration in Still Water</td>
-      <td>4.6m/s²</td>
-      <td>-</td>
+    <tr style="border: 1px solid #ddd;">
+      <td style="border: 1px solid #ddd; padding: 8px;">Maximum Speed in Still Water</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Approx. 3m/s</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">-</td>
     </tr>
-    <tr>
-      <td>Maximum Speed in Still Water</td>
-      <td>Approx. 3m/s</td>
-      <td>-</td>
+    <tr style="border: 1px solid #ddd;">
+      <td style="border: 1px solid #ddd; padding: 8px;">Maximum Angular Velocity of Steering in Still Water</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">5.7rad/s</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">-</td>
     </tr>
-    <tr>
-      <td>Maximum Angular Velocity of Steering in Still Water</td>
-      <td>5.7rad/s</td>
-      <td>-</td>
+    <tr style="border: 1px solid #ddd;">
+      <td style="border: 1px solid #ddd; padding: 8px;">Control Frequency</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">60Hz</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Can be adjusted according to actual needs</td>
     </tr>
-    <tr>
-      <td>Control Frequency</td>
-      <td>60Hz</td>
-      <td>Can be adjusted according to actual needs</td>
+    <tr style="border: 1px solid #ddd;">
+      <td style="border: 1px solid #ddd; padding: 8px;">Baud Rate</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">9600</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">-</td>
     </tr>
-    <tr>
-      <td>Baud Rate</td>
-      <td>9600</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Load Capacity</td>
-      <td>10-15N</td>
-      <td>-</td>
+    <tr style="border: 1px solid #ddd;">
+      <td style="border: 1px solid #ddd; padding: 8px;">Load Capacity</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">10-15N</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">-</td>
     </tr>
   </tbody>
-</table>|
+</table>
 
 ## Structure
 
