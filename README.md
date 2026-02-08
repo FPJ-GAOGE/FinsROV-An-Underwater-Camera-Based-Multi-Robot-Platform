@@ -4,19 +4,22 @@
 [![License](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/license/mit)
 [![License](https://img.shields.io/badge/license-CC%20BY--SA%204.0-orange.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-FinsROV is a low-cost, open-source Underwater robot platform designed for underwater task and research in robotics and AI.
+FinsROV is a low-cost, open-source Underwater robot platform designed for underwater task and research in robotics and AI. The eight-thruster configuration effectively ensures the flexibility of the robot's omnidirectional movement, and the dual-gimbal platform provides ample hardware expansion space, which can be applied to task scenarios such as underwater object tracking and underwater target recognition. This project supports both Chinese and English languages, though some videos and documents are only available in Chinese (Maybe this is a great opportunity to learn Chinese LOL)
 
-FinsROV是一台开源的低成本水下机器人平台，面向AI和机器人领域中的水下任务和研究针对性设计。八推进器结构有效的保证了机器人全向运动的的灵活性，双云台平台提供了充足的硬件扩展空间，
+FinsROV是一台开源的低成本水下机器人平台，面向AI和机器人领域中的水下任务和研究针对性设计。八推进器结构有效的保证了机器人全向运动的的灵活性，双云台平台提供了充足的硬件扩展空间，可以运用于水下物体跟踪，水下目标识别等任务场景。本项目提供中英两种语言的支持，但部分视频和文件仅有中文支持
 
 ## Overview
 
-本项目提供一台完整的低成本水下ROV，并包含非常高的可扩展性，可以运用于水下物体跟踪，水下
+
 
 FinsROV整体包含防水仓及其内部电路、推进器 *8、舵机 *4、水深传感器 *4以及各个支架，模型如下：
 <img width="1188" height="735" alt="image" src="https://github.com/user-attachments/assets/fe2c9f88-46f4-43ed-980f-b86c20867fb6" />
 
-防水仓内包含了潜器运行的基本电路，包括C板*1、IIC扩展板*1、PWM扩展板*1、分电板*1以及用于连接它们的电线。防水仓通过背部的穿线螺丝孔与外界电路进行连接，其中每个螺丝孔对应的连接为：
+防水仓内包含了潜器运行的基本电路，包括C板 *1、IIC扩展板 *1、PWM扩展板 *1、分电板 *1以及用于连接它们的电线。防水仓通过背部的穿线螺丝孔与外界电路进行连接，其中每个螺丝孔对应的连接为：
 <img width="1280" height="531" alt="防水仓" src="https://github.com/user-attachments/assets/68d546fd-b013-408e-a8cd-8d864b1ef431" />
+
+FinsROV配置了两个二自由度的云台、分别置于潜器的两侧，一个云台由两个舵机组成，每个舵机的最大旋转角度为（-90°~90°）
+<img width="1149" height="536" alt="image" src="https://github.com/user-attachments/assets/ea0486d9-fa3c-4817-aedd-b60c8719ee71" />
 
 
 ## Parameters
