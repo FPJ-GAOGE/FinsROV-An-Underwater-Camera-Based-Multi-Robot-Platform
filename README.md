@@ -15,7 +15,6 @@ FinsROV是一台开源的低成本水下机器人平台，面向AI和机器人�
 FinsROV整体包含防水仓及其内部电路、推进器 *8、舵机 *4、水深传感器 *4以及各个支架，模型如下：
 <img width="1188" height="735" alt="image" src="https://github.com/user-attachments/assets/fe2c9f88-46f4-43ed-980f-b86c20867fb6" />
 
-_防水仓内_
 防水仓内包含了潜器运行的基本电路，包括C板*1、IIC扩展板*1、PWM扩展板*1、分电板*1以及用于连接它们的电线。防水仓通过背部的穿线螺丝孔与外界电路进行连接，其中每个螺丝孔对应的连接为：
 <img width="1280" height="531" alt="防水仓" src="https://github.com/user-attachments/assets/68d546fd-b013-408e-a8cd-8d864b1ef431" />
 
