@@ -10,16 +10,17 @@ FinsROV是一台开源的低成本水下机器人平台，面向AI和机器人�
 
 ## Overview
 
-
-
+The FinsROV consists of a waterproof compartment with its internal circuitry, 8 propellers, 4 servos, 4 water depth sensors, and various brackets in total, with the model shown as follows:
 FinsROV整体包含防水仓及其内部电路、推进器 *8、舵机 *4、水深传感器 *4以及各个支架，模型如下：
 <img width="1188" height="735" alt="image" src="https://github.com/user-attachments/assets/fe2c9f88-46f4-43ed-980f-b86c20867fb6" />
 
+The waterproof compartment houses the basic circuitry for the submersible's operation, including 1 C-board, 1 I2C expansion board, 1 PWM expansion board, 1 power distribution board, and the connecting wires for them. The waterproof compartment connects to external circuits via cable-passing screw holes on its back, with the connection corresponding to each screw hole as follows:
 防水仓内包含了潜器运行的基本电路，包括C板 *1、IIC扩展板 *1、PWM扩展板 *1、分电板 *1以及用于连接它们的电线。防水仓通过背部的穿线螺丝孔与外界电路进行连接，其中每个螺丝孔对应的连接为：
 <img width="2607" height="1074" alt="image" src="https://github.com/user-attachments/assets/34963ad7-11ad-46b3-a1b1-de70d0e29ac5" />
 
 <img width="1280" height="531" alt="防水仓" src="https://github.com/user-attachments/assets/68d546fd-b013-408e-a8cd-8d864b1ef431" />
 
+FinsROV is equipped with two 2-DOF gimbals mounted on either side of the submersible respectively. Each gimbal consists of two servos, with a maximum rotation angle of -90° to 90° for each servo.
 FinsROV配置了两个二自由度的云台、分别置于潜器的两侧，一个云台由两个舵机组成，每个舵机的最大旋转角度为（-90°~90°）
 <img width="1149" height="536" alt="image" src="https://github.com/user-attachments/assets/ea0486d9-fa3c-4817-aedd-b60c8719ee71" />
 
