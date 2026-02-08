@@ -14,18 +14,75 @@ FinsROV是一台开源的低成本水下机器人平台，面向AI和机器人�
 
 ## Parameters
 
-| 类别 | 子项 | 参数 | 补充说明 |
-| :--- | :--- | :--- | :--- |
-| **规格** | 尺寸（长×宽×高） | 40cm*35cm*15cm |  |
-| **规格** | 功率 续航时间 | 约13.75W，约2h | 适配xt30/60接口的航模电池 |
-| **规格** | 空气中重量 | 4.33Kg(v3.0), 4.85Kg(v3.1) |  |
-| **规格** | 作业深度 | 10-20m，已通过内压测试 | 已通过内压测试 |
-| **动力系统** | 静水航行最大加速度 | 4.6m/s^2 |  |
-| **动力系统** | 静水航行最大速度 | 约3m/s |  |
-| **动力系统** | 静水转向最大角速度 | 5.7rad/s |  |
-| **动力系统** | 控制频率 | 60Hz | 可以根据实际需要进行调整 |
-| **动力系统** | 波特率 | 9600 |  |
-| **动力系统** | 载荷 | 10-15N |  |
+# Specifications and Power System Parameter Table
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Sub-item</th>
+      <th>Parameter</th>
+      <th>Supplementary Note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- 规格部分：合并4行单元格 -->
+    <tr>
+      <td rowspan="4"><strong>Specifications</strong></td>
+      <td>Dimensions (Length × Width × Height)</td>
+      <td>40cm*35cm*15cm</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Power & Endurance Time</td>
+      <td>Approx. 13.75W, Approx. 2h</td>
+      <td>Adapted to RC model batteries with xt30/60 interface</td>
+    </tr>
+    <tr>
+      <td>Weight in Air</td>
+      <td>4.33Kg(v3.0), 4.85Kg(v3.1)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Operating Depth</td>
+      <td>10-20m (Passed internal pressure test)</td>
+      <td>Passed internal pressure test</td>
+    </tr>
+    
+    <!-- 动力系统部分：合并6行单元格 -->
+    <tr>
+      <td rowspan="6"><strong>Power System</strong></td>
+      <td>Maximum Acceleration in Still Water</td>
+      <td>4.6m/s²</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Maximum Speed in Still Water</td>
+      <td>Approx. 3m/s</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Maximum Angular Velocity of Steering in Still Water</td>
+      <td>5.7rad/s</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Control Frequency</td>
+      <td>60Hz</td>
+      <td>Can be adjusted according to actual needs</td>
+    </tr>
+    <tr>
+      <td>Baud Rate</td>
+      <td>9600</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Load Capacity</td>
+      <td>10-15N</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>|
 
 ## Structure
 
