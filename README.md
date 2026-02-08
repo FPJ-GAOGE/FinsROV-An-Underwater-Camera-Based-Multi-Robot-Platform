@@ -79,6 +79,71 @@ FinsROV是一台开源的低成本水下机器人平台，面向AI和机器人�
   </tbody>
 </table>
 
+<table style="width:100%; border-collapse: collapse;">
+  <thead>
+    <tr style="border: 1px solid #ddd;">
+      <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">类别</th>
+      <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">子项</th>
+      <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">参数</th>
+      <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">补充说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border: 1px solid #ddd;">
+      <td rowspan="4" style="border: 1px solid #ddd; padding: 8px; background-color: #f5f5f5;"><strong>规格</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">尺寸（长×宽×高）</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">40cm*35cm*15cm</td>
+      <td style="border: 1px solid #ddd; padding: 8px;"></td>
+    </tr>
+    <tr style="border: 1px solid #ddd;">
+      <td style="border: 1px solid #ddd; padding: 8px;">功率 续航时间</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">约13.75W，约2h</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">适配xt30/60接口的航模电池</td>
+    </tr>
+    <tr style="border: 1px solid #ddd;">
+      <td style="border: 1px solid #ddd; padding: 8px;">空气中重量</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">4.33Kg(v3.0), 4.85Kg(v3.1)</td>
+      <td style="border: 1px solid #ddd; padding: 8px;"></td>
+    </tr>
+    <tr style="border: 1px solid #ddd;">
+      <td style="border: 1px solid #ddd; padding: 8px;">作业深度</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">10-20m，已通过内压测试</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">已通过内压测试</td>
+    </tr>
+    <tr style="border: 1px solid #ddd;">
+      <td rowspan="6" style="border: 1px solid #ddd; padding: 8px; background-color: #f5f5f5;"><strong>动力系统</strong></td>
+      <td style="border: 1px solid #ddd; padding: 8px;">静水航行最大加速度</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">4.6m/s^2</td>
+      <td style="border: 1px solid #ddd; padding: 8px;"></td>
+    </tr>
+    <tr style="border: 1px solid #ddd;">
+      <td style="border: 1px solid #ddd; padding: 8px;">静水航行最大速度</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">约3m/s</td>
+      <td style="border: 1px solid #ddd; padding: 8px;"></td>
+    </tr>
+    <tr style="border: 1px solid #ddd;">
+      <td style="border: 1px solid #ddd; padding: 8px;">静水转向最大角速度</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">5.7rad/s</td>
+      <td style="border: 1px solid #ddd; padding: 8px;"></td>
+    </tr>
+    <tr style="border: 1px solid #ddd;">
+      <td style="border: 1px solid #ddd; padding: 8px;">控制频率</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">60Hz</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">可以根据实际需要进行调整</td>
+    </tr>
+    <tr style="border: 1px solid #ddd;">
+      <td style="border: 1px solid #ddd; padding: 8px;">波特率</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">9600</td>
+      <td style="border: 1px solid #ddd; padding: 8px;"></td>
+    </tr>
+    <tr style="border: 1px solid #ddd;">
+      <td style="border: 1px solid #ddd; padding: 8px;">载荷</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">10-15N</td>
+      <td style="border: 1px solid #ddd; padding: 8px;"></td>
+    </tr>
+  </tbody>
+</table>
+
 ## Structure
 
 我们开源了水下机器人所有的结构件，提供对应的STEP文件，通过Solidworks等软件，可以对机器人结构进行修改。通过3D打印或者CNC加工等不同的形式，都可以制造对应的结构件
