@@ -1,4 +1,4 @@
-<img width="960" height="556" alt="image" src="https://github.com/user-attachments/assets/dc544389-3cdc-4e68-832b-08e3d2075c98" />## FinsROV: an Underwater Camera-Based Multi-robot platform
+## FinsROV: an Underwater Camera-Based Multi-robot platform
 
 [![Python](https://img.shields.io/badge/python-3.10-blue.svg)](https://docs.python.org/3/whatsnew/3.10.html)
 [![License](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/license/mit)
@@ -13,8 +13,6 @@ FinsROV是一台开源的低成本水下机器人平台，面向AI和机器人�
 本项目提供一台完整的低成本水下ROV，并包含非常高的可扩展性，可以运用于水下物体跟踪，水下
 
 ## Parameters
-
-# Specifications and Power System Parameter Table
 
 <table>
   <thead>
