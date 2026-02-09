@@ -165,7 +165,13 @@ We have open-sourced all structural components of the underwater robot, which ca
 
 ## BOM
 
+The complete BOM of our robot is shown below. For regions where components can be directly purchased on Taobao, you may click the links directly (this is not an advertisement; you may purchase from other suppliers). For those with no access to Taobao, please refer to the following information. A downloadable version of the BOM is also available in the Structure folder.
 
+我们机器人的完整BOM表格如下，对于能够直接通过淘宝采购零部件的地区，可以直接点链接（非广告，可以买别家的）。如果没有办法使用淘宝，可以参考一下内容。在Structure文件中也有对应可下载的BOM文件。
+
+[中文版本](https://docs.google.com/spreadsheets/d/1fIgdKPsx-9QTdMGvk-Vg6hmxgAVsjg4v-JMBh90Yp5g/edit?gid=0#gid=0)
+
+[English Version BOM](https://docs.google.com/spreadsheets/d/1fIgdKPsx-9QTdMGvk-Vg6hmxgAVsjg4v-JMBh90Yp5g/edit?gid=352875595#gid=352875595)
 
 ## Controller
 
