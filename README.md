@@ -254,22 +254,30 @@ Our robot platform supports a variety of host computer systems, including but no
 我们的机器人平台支持多种上位机系统，包括但不限于windows，linux，Mac os，Android，树莓派等，我们推荐使用手柄进行控制。相关代码在[Joystick_Control](https://github.com/FPJ-GAOGE/FinsROV-An-Underwater-Camera-Based-Multi-Robot-Platform/tree/main/Code/Joystick_Control)中，配合Readme使用
 
 ## Video 
-only chinese educate
 
-How to bulid the robot platform:
+We provide a complete set of video tutorials for building the underwater vehicle. We sincerely apologize that these tutorials are only available on Bilibili with Chinese voice-overs and subtitles. We will also upload other relevant content, and we welcome you to subscribe to our [channel](https://space.bilibili.com/1188256336?spm_id_from=333.40164.0.0).
 
-controller coding:
+我们为制作潜器提供完整的视频教程，但是非常抱歉，相关教程上传至BiliBili且只有中文配音与字幕。我们也会上传其他相关的内容，欢迎订阅[我们的频道](https://space.bilibili.com/1188256336?spm_id_from=333.40164.0.0)
+
+How to bulid the robot platform: coming soon
+
+coding: coming soon
 
 basic theory about underwater robot:[【面向水下机器人的动力学与运动学建模及控制器分析】](https://www.bilibili.com/video/BV1VXmQBRE2a/?share_source=copy_web&vd_source=898a23397484d4386766c76dfa58679f)
 
 demo:[【目前可公开的情报：FINS第一代水下机器人】](https://www.bilibili.com/video/BV1oC41177Rn/?share_source=copy_web&vd_source=e6237e17b71511df8920049cd998c076)
 
 ## Note
-
+1. If the propellers whine or make obvious abnormal noises on startup, stop the robot immediately (set to OFF) and restart it (set to ON). Power off is generally unnecessary. Repeat the above steps until the propellers operate with normal noises.
+2. If the robot fails to respond to button presses, power it off and restart it directly.
 1. 若启动时推进器啸叫，出现明显不正常声音，立刻停止潜器（输OFF），再重新启动（输ON），一般不需要断电。直到推进器声音正常
 2. 若出现按按键，但潜器没有反应，直接断电重启
 
-## Citation
+## Thank & Citation
+
+This project acknowledges the contributions of Ding Lin, Jisheng Xu, Jiahao Lin, Yanqi Feng, Jiaming Guo and other students who are or have been part of the FINS-Underwater Group.
+
+这个项目要感谢Ding Lin, Jisheng Xu, Jiahao Lin, Yanqi Feng, Jiaming Guo等来自或参与过FINS-Underwater Group的同学的贡献 
 
 If you find this code useful, we would appreciate if you would cite our paper:
 
