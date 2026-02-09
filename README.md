@@ -196,6 +196,7 @@ IIC扩展板接水压计：IIC扩展板输出端0-3号端口（每个端口对�
 I2C Expansion Board to PWM Expansion Board: The GND, VCC, SCL and SDA of Port 4 on the output terminal of the I2C Expansion Board are connected to the GND, VCC, SCL and SDA of the input terminal on the PWM Expansion Board (the side with 6 black base pins arranged in a row) respectively.
 
 IIC扩展板接PWM扩展板：IIC扩展板输出端4号端口的GND、VCC、SCL、SDA分别与PWM扩展板输入端（一侧并排6个黑色底座针脚）的GND、VCC、SCL、SDA相连
+
 <img width="579" height="486" alt="image" src="https://github.com/user-attachments/assets/eaca67df-8637-442a-9803-b3504d304920" />
 
 C-board to PWM Expansion Board: Any 5V port of the PWM interface on the C-board is connected to the V+ of the input terminal on the PWM Expansion Board.
