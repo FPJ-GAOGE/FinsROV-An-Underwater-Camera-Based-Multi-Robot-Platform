@@ -27,6 +27,9 @@ FinsROV is equipped with two 2-DOF gimbals mounted on either side of the submers
 FinsROV配置了两个二自由度的云台、分别置于潜器的两侧，一个云台由两个舵机组成，每个舵机的最大旋转角度为（-90°~90°）
 <img width="1149" height="536" alt="image" src="https://github.com/user-attachments/assets/ea0486d9-fa3c-4817-aedd-b60c8719ee71" />
 
+We have open-sourced all structural components of the underwater robot, which can be found in the [Structure](https://github.com/FPJ-GAOGE/FinsROV-An-Underwater-Camera-Based-Multi-Robot-Platform/tree/main/Structure) folder, with the corresponding STEP files provided. The robot’s structure can be modified using software such as Solidworks, and the relevant structural components can be manufactured by means including 3D printing and CNC machining. We welcome everyone to upgrade and modify this robot platform.
+
+我们开源了水下机器人所有的结构件，在[Structure](https://github.com/FPJ-GAOGE/FinsROV-An-Underwater-Camera-Based-Multi-Robot-Platform/tree/main/Structure)文件夹中，提供对应的STEP文件，通过Solidworks等软件，可以对机器人结构进行修改。通过3D打印或者CNC加工等不同的形式，都可以制造对应的结构件，我们欢迎大家对机器人平台进行升级和改造
 
 ## Parameters
 
@@ -162,7 +165,7 @@ FinsROV配置了两个二自由度的云台、分别置于潜器的两侧，一�
 
 ## Structure
 
-我们开源了水下机器人所有的结构件，提供对应的STEP文件，通过Solidworks等软件，可以对机器人结构进行修改。通过3D打印或者CNC加工等不同的形式，都可以制造对应的结构件
+
 
 ## Controller
 
