@@ -243,7 +243,7 @@ Water Pressure Gauges to Water Pressure Gauge Adapter Boards: The 4 external wat
 
 ## Controller
 
-本项目中
+本项目中我们的下位机是基于DJI Robomaster C板（STM32F4），使用Keil进行开发的。如果需要对代码进行二次开发，需要下载Keil MDK533以上版本。依赖 $Keil.STM32F4xx_DFP.2.14.0.pack$ 文件。安装stlink中的dpinst_x86.exe（32位）或 dpinst_amd64.exe（64位）。无线烧写器与有线烧写器流程类似，在选择调试工具的时候改为选择CMSIS-DAP Debugger即可，一般不需要修改时钟频率
 
 如果你想有更好的性能，我们推荐使用我们实验室开发的[FINEMOTE框架](https://github.com/FINS-Fines/FineMote)（部分硬件暂未适配）
 
