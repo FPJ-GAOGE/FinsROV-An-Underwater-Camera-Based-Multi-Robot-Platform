@@ -82,12 +82,12 @@ We have open-sourced all structural components of the underwater robot, which ca
     </tr>
     <tr style="border: 1px solid #ddd;">
       <td style="border: 1px solid #ddd; padding: 8px;">Control Frequency</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">60Hz</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">150Hz</td>
       <td style="border: 1px solid #ddd; padding: 8px;">Can be adjusted according to actual needs</td>
     </tr>
     <tr style="border: 1px solid #ddd;">
       <td style="border: 1px solid #ddd; padding: 8px;">Baud Rate</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">9600</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">115200</td>
       <td style="border: 1px solid #ddd; padding: 8px;">-</td>
     </tr>
     <tr style="border: 1px solid #ddd;">
@@ -147,12 +147,12 @@ We have open-sourced all structural components of the underwater robot, which ca
     </tr>
     <tr style="border: 1px solid #ddd;">
       <td style="border: 1px solid #ddd; padding: 8px;">控制频率</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">60Hz</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">150Hz</td>
       <td style="border: 1px solid #ddd; padding: 8px;">可以根据实际需要进行调整</td>
     </tr>
     <tr style="border: 1px solid #ddd;">
       <td style="border: 1px solid #ddd; padding: 8px;">波特率</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">9600</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">115200</td>
       <td style="border: 1px solid #ddd; padding: 8px;"></td>
     </tr>
     <tr style="border: 1px solid #ddd;">
@@ -163,7 +163,7 @@ We have open-sourced all structural components of the underwater robot, which ca
   </tbody>
 </table>
 
-## Structure
+## BOM
 
 
 
