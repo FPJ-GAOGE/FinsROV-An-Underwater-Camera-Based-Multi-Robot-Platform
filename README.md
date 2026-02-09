@@ -243,7 +243,7 @@ Water Pressure Gauges to Water Pressure Gauge Adapter Boards: The 4 external wat
 
 ## Controller
 
-All controller codes are stored in the [Lower level controller](https://github.com/FPJ-GAOGE/FinsROV-An-Underwater-Camera-Based-Multi-Robot-Platform/tree/main/Code/Lower_Level_Controller) and can be used with the Readme file. In this project, our lower-level controller is based on the DJI Robomaster C-board (STM32F4) and developed with Keil. For secondary development of the code, you need to download Keil MDK version 533 or later, and it depends on the file Keil.STM32F4xx_DFP.2.14.0.pack. Install dpinst_x86.exe (for 32-bit systems) or dpinst_amd64.exe (for 64-bit systems) from the STLink package. The process for wireless programmers is similar to that of wired programmers; simply select CMSIS-DAP Debugger when choosing the debug tool, and there is generally no need to modify the clock frequency. For better performance, we recommend using the [FINEMOTE框架](https://github.com/FINS-Fines/FineMote) developed by our laboratory (note: some hardware is not yet adapted). It is a powerful embedded development framework that will also be used synchronously in our new-generation underwater robots.
+All controller codes are stored in the [Lower level controller](https://github.com/FPJ-GAOGE/FinsROV-An-Underwater-Camera-Based-Multi-Robot-Platform/tree/main/Code/Lower_Level_Controller) and can be used with the Readme file. In this project, our lower-level controller is based on the DJI Robomaster C-board (STM32F4) and developed with Keil. For secondary development of the code, you need to download Keil MDK version 533 or later, and it depends on the file Keil.STM32F4xx_DFP.2.14.0.pack. Install dpinst_x86.exe (for 32-bit systems) or dpinst_amd64.exe (for 64-bit systems) from the STLink package. The process for wireless programmers is similar to that of wired programmers; simply select CMSIS-DAP Debugger when choosing the debug tool, and there is generally no need to modify the clock frequency. For better performance, we recommend using the [FINEMOTE](https://github.com/FINS-Fines/FineMote) developed by our laboratory (note: some hardware is not yet adapted). It is a powerful embedded development framework that will also be used synchronously in our new-generation underwater robots.
 
 控制器代码都在[Lower level controller](https://github.com/FPJ-GAOGE/FinsROV-An-Underwater-Camera-Based-Multi-Robot-Platform/tree/main/Code/Lower_Level_Controller)文件夹中，可以配合Readme使用，本项目中我们的下位机是基于DJI Robomaster C板（STM32F4），使用Keil进行开发的。如果需要对代码进行二次开发，需要下载Keil MDK533以上版本。依赖Keil.STM32F4xx_DFP.2.14.0.pack文件。安装stlink中的dpinst_x86.exe（32位）或 dpinst_amd64.exe（64位）。无线烧写器与有线烧写器流程类似，在选择调试工具的时候改为选择CMSIS-DAP Debugger即可，一般不需要修改时钟频率。如果你想有更好的性能，推荐使用我们实验室开发的[FINEMOTE框架](https://github.com/FINS-Fines/FineMote)（部分硬件暂未适配），这是一种强大的嵌入式开发框架，我们新一代的水下机器人上也会同步使用该框架
 
@@ -279,6 +279,7 @@ demo:[【目前可公开的情报：FINS第一代水下机器人】](https://www
 2. 若出现按按键，但潜器没有反应，直接断电重启
 
 ## Citation
+
 If you find this code useful, we would appreciate if you would cite our paper:
 
 如果你觉得我们的开源项目能够帮助到你，欢迎你引用我们的文章！并持续关注我们的后续研究：
