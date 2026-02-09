@@ -173,12 +173,51 @@ The complete BOM of our robot is shown below. For regions where components can b
 
 [English Version BOM](https://docs.google.com/spreadsheets/d/1fIgdKPsx-9QTdMGvk-Vg6hmxgAVsjg4v-JMBh90Yp5g/edit?gid=352875595#gid=352875595)
 
+## Electronics
+
+机器人内部电路的完整接线图如下：
+<img width="1994" height="1200" alt="inside Electronics" src="https://github.com/user-attachments/assets/9dd84f9b-5fa3-4b54-88f9-8dc48d61bfce" />
+外部接线：485：绿-A+ // 绿白-B- // 橙-GND
+
+内部接线：C板接IIC扩展板：C板IIC接口的2、4、6、8号分别与IIC扩展板输入端（一侧并排5个黑色底座针脚）的GND、VCC、SCL、SDA相连
+<img width="1197" height="324" alt="image" src="https://github.com/user-attachments/assets/d9d783e4-9902-47d3-96b0-ce0abd5396f7" />
+
+IIC扩展板接水压计：
+IIC扩展板输出端0-3号端口（每个端口对应并排4个底座颜色不同的针脚）的GND、VCC、SCL、SDA分别与4个水压计的黑色、红色、绿色、白色线相连
+
+IIC扩展板接PWM扩展板：
+<img width="579" height="486" alt="image" src="https://github.com/user-attachments/assets/eaca67df-8637-442a-9803-b3504d304920" />
+IIC扩展板输出端4号端口的GND、VCC、SCL、SDA分别与PWM扩展板输入端（一侧并排6个黑色底座针脚）的GND、VCC、SCL、SDA相连
+
+C板接PWM扩展板：
+<img width="1128" height="426" alt="image" src="https://github.com/user-attachments/assets/b2edcb37-1fee-4348-8422-6d7a144375c6" />
+C板PWM接口的任意一个5V端口与PWM扩展板输入端的V+相连
+
+防水舱内与舱外设备：由于接线数量较多，如果手动焊接会非常复杂，因此配置了如下的接线端子，可以插拔并且方便接线。
+<img width="1206" height="639" alt="image" src="https://github.com/user-attachments/assets/0dc01e12-81e7-49c2-ae50-458fe09b8f6b" />
+共有6针座（大）*4，连接推进器（一个推进器包含正、负、信号三根线）；6针座（小）*2，连接舵机（一个舵机包含正、负、信号三根线）；2针座（大），连接电源（正、负级）；7针座（小），连接串口（UART三线+SWD C板程序烧写线四线）；水深传感器使用自带的转接板连接。
+
+电源接C板和推进器：舱外电池通过电源线连接舱内C板电源输入端（8号），C板电源输出端（9号任意一个）连接8个推进器电源输入端（并联）
+<img width="333" height="545" alt="image" src="https://github.com/user-attachments/assets/4cb6b7bf-2110-424a-acb1-654af6e473d6" />
+
+C板接stlink：stlink连接上位机，用于程序烧写、调试.  舱外stlink连接舱内C板SWD下载线端口，SWCLK、SWDIO、GND、3.3V对应连接
+<img width="1175" height="600" alt="image" src="https://github.com/user-attachments/assets/86bfafe5-aaa4-4ff0-aef9-eaf95f40d009" />
+
+C板接串口：串口模块连接上位机，用于收发指令,舱外串口模块连接舱内C板UART6，RX接TX，TX接RX，GND接GND
+<img width="1218" height="396" alt="image" src="https://github.com/user-attachments/assets/87e28afb-75b2-402b-9025-59e0b07dcc1f" />
+
+推进器接PWM扩展板：舱外8个推进器信号输入端分别连接舱内PWM扩展板输出端0-7号端口PWM端（黄色底座针脚）
+
+舵机接PWM扩展板：舱外4个舵机分别连接舱内PWM扩展板输出端8-11号端口，负极接GND，正极接V+，信号线接PWM
+<img width="345" height="510" alt="image" src="https://github.com/user-attachments/assets/a7500fb7-db0c-4101-976f-ee934d6556e9" />
+
+水压计接水压计转接板：舱外4个水压计连接舱内4个水压机转接板，直接插入端子即可
+
 ## Controller
 
 本项目中
 
-如果你想有更好的性能，我们推荐使用我们实验室开发的FINEMOTE框架，链接：
-（部分硬件暂未适配）
+如果你想有更好的性能，我们推荐使用我们实验室开发的[FINEMOTE框架](https://github.com/FINS-Fines/FineMote)（部分硬件暂未适配）
 
 
 
@@ -208,7 +247,10 @@ basic theory about underwater robot:[【面向水下机器人的动力学与运�
 
 demo:[【目前可公开的情报：FINS第一代水下机器人】](https://www.bilibili.com/video/BV1oC41177Rn/?share_source=copy_web&vd_source=e6237e17b71511df8920049cd998c076)
 
+## Note
 
+1. 若启动时推进器啸叫，出现明显不正常声音，立刻停止潜器（输OFF），再重新启动（输ON），一般不需要断电。直到推进器声音正常
+2. 若出现按按键，但潜器没有反应，直接断电重启
 
 ## Citation
 If you find this code useful, we would appreciate if you would cite our paper:
