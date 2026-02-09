@@ -257,7 +257,7 @@ Our robot platform supports a variety of host computer systems, including but no
 
 We provide a complete set of video tutorials for building the underwater vehicle. We sincerely apologize that these tutorials are only available on Bilibili with Chinese voice-overs and subtitles. We will also upload other relevant content, and we welcome you to subscribe to our [channel](https://space.bilibili.com/1188256336?spm_id_from=333.40164.0.0).
 
-我们为制作潜器提供完整的视频教程，但是非常抱歉，相关教程上传至BiliBili且只有中文配音与字幕。我们也会上传其他相关的内容，欢迎订阅[我们的频道](https://space.bilibili.com/1188256336?spm_id_from=333.40164.0.0)
+我们为制作潜器提供完整的视频教程，但是非常抱歉，相关教程上传至BiliBili且只有中文配音与字幕。我们也会上传其他相关的内容，[欢迎订阅](https://space.bilibili.com/1188256336?spm_id_from=333.40164.0.0)
 
 How to bulid the robot platform: coming soon
 
