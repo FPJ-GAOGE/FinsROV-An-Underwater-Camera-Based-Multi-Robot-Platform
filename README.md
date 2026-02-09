@@ -174,42 +174,69 @@ The complete BOM of our robot is shown below. For regions where components can b
 [English Version BOM](https://docs.google.com/spreadsheets/d/1fIgdKPsx-9QTdMGvk-Vg6hmxgAVsjg4v-JMBh90Yp5g/edit?gid=352875595#gid=352875595)
 
 ## Electronics
+The complete wiring diagram for the robot's internal circuitry is shown below:
 
 机器人内部电路的完整接线图如下：
+
 <img width="1994" height="1200" alt="inside Electronics" src="https://github.com/user-attachments/assets/9dd84f9b-5fa3-4b54-88f9-8dc48d61bfce" />
+
+External Wiring: 485: Green - A+ // Green-White - B- // Orange - GND
+
 外部接线：485：绿-A+ // 绿白-B- // 橙-GND
+
+Internal Wiring: C-board to I2C Expansion Board: Pins 2, 4, 6, and 8 of the IIC interface on the C-board are connected to GND, VCC, SCL, and SDA of the input terminal on the I2C expansion board (the side with 5 black base pins arranged in a row), respectively.
 
 内部接线：C板接IIC扩展板：C板IIC接口的2、4、6、8号分别与IIC扩展板输入端（一侧并排5个黑色底座针脚）的GND、VCC、SCL、SDA相连
 <img width="1197" height="324" alt="image" src="https://github.com/user-attachments/assets/d9d783e4-9902-47d3-96b0-ce0abd5396f7" />
 
-IIC扩展板接水压计：
-IIC扩展板输出端0-3号端口（每个端口对应并排4个底座颜色不同的针脚）的GND、VCC、SCL、SDA分别与4个水压计的黑色、红色、绿色、白色线相连
+I2C Expansion Board to Water Pressure Gauges: The GND, VCC, SCL and SDA of Ports 0 to 3 on the output terminal of the I2C Expansion Board (each port corresponding to 4 base pins of different colors arranged in a row) are connected to the black, red, green and white wires of the 4 water pressure gauges respectively.
 
-IIC扩展板接PWM扩展板：
+IIC扩展板接水压计：IIC扩展板输出端0-3号端口（每个端口对应并排4个底座颜色不同的针脚）的GND、VCC、SCL、SDA分别与4个水压计的黑色、红色、绿色、白色线相连
+
+I2C Expansion Board to PWM Expansion Board: The GND, VCC, SCL and SDA of Port 4 on the output terminal of the I2C Expansion Board are connected to the GND, VCC, SCL and SDA of the input terminal on the PWM Expansion Board (the side with 6 black base pins arranged in a row) respectively.
+
+IIC扩展板接PWM扩展板：IIC扩展板输出端4号端口的GND、VCC、SCL、SDA分别与PWM扩展板输入端（一侧并排6个黑色底座针脚）的GND、VCC、SCL、SDA相连
 <img width="579" height="486" alt="image" src="https://github.com/user-attachments/assets/eaca67df-8637-442a-9803-b3504d304920" />
-IIC扩展板输出端4号端口的GND、VCC、SCL、SDA分别与PWM扩展板输入端（一侧并排6个黑色底座针脚）的GND、VCC、SCL、SDA相连
 
-C板接PWM扩展板：
+C-board to PWM Expansion Board: Any 5V port of the PWM interface on the C-board is connected to the V+ of the input terminal on the PWM Expansion Board.
+
+C板接PWM扩展板：C板PWM接口的任意一个5V端口与PWM扩展板输入端的V+相连
 <img width="1128" height="426" alt="image" src="https://github.com/user-attachments/assets/b2edcb37-1fee-4348-8422-6d7a144375c6" />
-C板PWM接口的任意一个5V端口与PWM扩展板输入端的V+相连
+
+Devices Inside/Outside the Waterproof Compartment: Manual soldering is overly complex due to numerous wirings, so the following pluggable terminal blocks are provided for easy wiring.
 
 防水舱内与舱外设备：由于接线数量较多，如果手动焊接会非常复杂，因此配置了如下的接线端子，可以插拔并且方便接线。
 <img width="1206" height="639" alt="image" src="https://github.com/user-attachments/assets/0dc01e12-81e7-49c2-ae50-458fe09b8f6b" />
+
+There are 4 pcs of 6-pin sockets (large) for connecting propellers (each propeller has three wires for positive, negative and signal); 2 pcs of 6-pin sockets (small) for connecting servos (each servo has three wires for positive, negative and signal); 1 pc of 2-pin socket (large) for connecting the power supply (positive and negative poles); 1 pc of 7-pin socket (small) for connecting the serial port (3 wires for UART + 4 wires for SWD C-board program burning); the water depth sensor is connected via its own adapter board.
+
 共有6针座（大）*4，连接推进器（一个推进器包含正、负、信号三根线）；6针座（小）*2，连接舵机（一个舵机包含正、负、信号三根线）；2针座（大），连接电源（正、负级）；7针座（小），连接串口（UART三线+SWD C板程序烧写线四线）；水深传感器使用自带的转接板连接。
+
+Power Supply to C-board and Propellers: The external battery is connected to the power input port (No.8) of the internal C-board via a power cable, and any of the power output ports (No.9) on the C-board is connected to the power input ports of the 8 propellers (in parallel).
 
 电源接C板和推进器：舱外电池通过电源线连接舱内C板电源输入端（8号），C板电源输出端（9号任意一个）连接8个推进器电源输入端（并联）
 <img width="333" height="545" alt="image" src="https://github.com/user-attachments/assets/4cb6b7bf-2110-424a-acb1-654af6e473d6" />
 
+C-board to STLink: The STLink is connected to the host computer for program burning and debugging. The external STLink is connected to the SWD download port of the internal C-board, with SWCLK, SWDIO, GND and 3.3V connected in a one-to-one correspondence.
+
 C板接stlink：stlink连接上位机，用于程序烧写、调试.  舱外stlink连接舱内C板SWD下载线端口，SWCLK、SWDIO、GND、3.3V对应连接
 <img width="1175" height="600" alt="image" src="https://github.com/user-attachments/assets/86bfafe5-aaa4-4ff0-aef9-eaf95f40d009" />
+
+C-board to Serial Port: The serial port module is connected to the host computer for sending and receiving commands. The external serial port module is connected to UART6 of the internal C-board, with RX connected to TX, TX connected to RX, and GND connected to GND.
 
 C板接串口：串口模块连接上位机，用于收发指令,舱外串口模块连接舱内C板UART6，RX接TX，TX接RX，GND接GND
 <img width="1218" height="396" alt="image" src="https://github.com/user-attachments/assets/87e28afb-75b2-402b-9025-59e0b07dcc1f" />
 
+Propellers to PWM Expansion Board: The signal input terminals of the 8 external propellers are connected respectively to the PWM terminals (yellow base pins) of Ports 0 to 7 on the output terminal of the internal PWM Expansion Board.
+
 推进器接PWM扩展板：舱外8个推进器信号输入端分别连接舱内PWM扩展板输出端0-7号端口PWM端（黄色底座针脚）
+
+Servos to PWM Expansion Board: The 4 external servos are connected to Ports 8 to 11 on the output terminal of the internal PWM Expansion Board respectively, with the negative poles connected to GND, the positive poles connected to V+, and the signal wires connected to PWM.
 
 舵机接PWM扩展板：舱外4个舵机分别连接舱内PWM扩展板输出端8-11号端口，负极接GND，正极接V+，信号线接PWM
 <img width="345" height="510" alt="image" src="https://github.com/user-attachments/assets/a7500fb7-db0c-4101-976f-ee934d6556e9" />
+
+Water Pressure Gauges to Water Pressure Gauge Adapter Boards: The 4 external water pressure gauges connect to the 4 internal water pressure gauge adapter boards, which can be directly inserted into the terminals.
 
 水压计接水压计转接板：舱外4个水压计连接舱内4个水压机转接板，直接插入端子即可
 
