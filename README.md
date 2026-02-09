@@ -245,22 +245,13 @@ Water Pressure Gauges to Water Pressure Gauge Adapter Boards: The 4 external wat
 
 All controller codes are stored in the [Lower level controller](https://github.com/FPJ-GAOGE/FinsROV-An-Underwater-Camera-Based-Multi-Robot-Platform/tree/main/Code/Lower_Level_Controller) and can be used with the Readme file. In this project, our lower-level controller is based on the DJI Robomaster C-board (STM32F4) and developed with Keil. For secondary development of the code, you need to download Keil Version 5.38 or later, and it depends on the file Keil.STM32F4xx_DFP.2.14.0.pack. Install dpinst_x86.exe (for 32-bit systems) or dpinst_amd64.exe (for 64-bit systems) from the STLink package. The process for wireless programmers is similar to that of wired programmers; simply select CMSIS-DAP Debugger when choosing the debug tool, and there is generally no need to modify the clock frequency. For better performance, we recommend using the [FINEMOTE](https://github.com/FINS-Fines/FineMote) developed by our laboratory (note: some hardware is not yet adapted). It is a powerful embedded development framework that will also be used synchronously in our new-generation underwater robots.
 
-控制器代码都在[Lower level controller](https://github.com/FPJ-GAOGE/FinsROV-An-Underwater-Camera-Based-Multi-Robot-Platform/tree/main/Code/Lower_Level_Controller)文件夹中，可以配合Readme使用，本项目中我们的下位机是基于DJI Robomaster C板（STM32F4），使用Keil进行开发的。如果需要对代码进行二次开发，需要下载Keil 5.38以上版本。依赖Keil.STM32F4xx_DFP.2.14.0.pack文件。安装stlink中的dpinst_x86.exe（32位）或 dpinst_amd64.exe（64位）。无线烧写器与有线烧写器流程类似，在选择调试工具的时候改为选择CMSIS-DAP Debugger即可，一般不需要修改时钟频率。如果你想有更好的性能，推荐使用我们实验室开发的[FINEMOTE框架](https://github.com/FINS-Fines/FineMote)（部分硬件暂未适配），这是一种强大的嵌入式开发框架，我们新一代的水下机器人上也会同步使用该框架
+控制器代码在[Lower level controller](https://github.com/FPJ-GAOGE/FinsROV-An-Underwater-Camera-Based-Multi-Robot-Platform/tree/main/Code/Lower_Level_Controller)文件夹中，配合Readme使用，本项目中我们的下位机是基于DJI Robomaster C板（STM32F4），使用Keil进行开发的。如果需要对代码进行二次开发，需要下载Keil 5.38以上版本。依赖Keil.STM32F4xx_DFP.2.14.0.pack文件。安装stlink中的dpinst_x86.exe（32位）或 dpinst_amd64.exe（64位）。无线烧写器与有线烧写器流程类似，在选择调试工具的时候改为选择CMSIS-DAP Debugger即可，一般不需要修改时钟频率。如果你想有更好的性能，推荐使用我们实验室开发的[FINEMOTE框架](https://github.com/FINS-Fines/FineMote)（部分硬件暂未适配），这是一种强大的嵌入式开发框架，我们新一代的水下机器人上也会同步使用该框架
 
 ## Wired-Joystick
-In Wired-Joystick document
 
-creat new environment, python version:[![Python](https://img.shields.io/badge/python-3.10-blue.svg)](https://docs.python.org/3/whatsnew/3.10.html)
+Our robot platform supports a variety of host computer systems, including but not limited to Windows, Linux, macOS, Android, Raspberry Pi, etc. We recommend using a game Joystick for control. The relevant code is available in [Joystick_Control](https://github.com/FPJ-GAOGE/FinsROV-An-Underwater-Camera-Based-Multi-Robot-Platform/tree/main/Code/Joystick_Control) and should be used in conjunction with the Readme file.
 
-新建虚拟环境，python版本3.10
-
-输入指令
-```console
-$ pip install pyserial pygame
-```
-硬件连接：连接相机的网口与控制口的USB口
-确认控制口的USB的COM号（可以在设备管理器里的端口（COM和LPT）项中查看），并在程序中进行修改
-如果使用V3.3之前的普通usb相机版本，请运行7-usbCameraFullControl文件； 如果使用的是V3.3网络相机版本，请运行10-webCameraCombinedControl文件。
+我们的机器人平台支持多种上位机系统，包括但不限于windows，linux，Mac os，Android，树莓派等，我们推荐使用手柄进行控制。相关代码在[Joystick_Control](https://github.com/FPJ-GAOGE/FinsROV-An-Underwater-Camera-Based-Multi-Robot-Platform/tree/main/Code/Joystick_Control)中，配合Readme使用
 
 ## Video 
 only chinese educate
