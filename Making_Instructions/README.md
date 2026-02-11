@@ -1,16 +1,17 @@
 # Making Instructions
-The waterproof compartment houses the basic circuitry for the submersible's operation, including 1 C-board, 1 I2C expansion board, 1 PWM expansion board, 1 power distribution board, and the connecting wires for them. The waterproof compartment connects to external circuits via cable-passing screw holes on its back, with the connection corresponding to each screw hole as follows:
+The waterproof compartment houses the basic circuitry for the submersible's operation, including 1 C-board, 1 I2C expansion board, 1 PWM expansion board, and the connecting wires for them. The waterproof compartment connects to external circuits via cable-passing screw holes on its back, with the connection corresponding to each screw hole as follows:
 
-防水仓内包含了潜器运行的基本电路，包括C板 x1、IIC扩展板 x1、PWM扩展板 x1、分电板 x1以及用于连接它们的电线。防水仓通过背部的穿线螺丝孔与外界电路进行连接，其中每个螺丝孔对应的连接为：
+防水仓内包含了潜器运行的基本电路，包括C板 x1、IIC扩展板 x1、PWM扩展板 x1以及用于连接它们的电线。防水仓通过背部的穿线螺丝孔与外界电路进行连接，其中每个螺丝孔对应的连接为：
 
-<img width="1280" height="531" alt="防水仓" src="https://github.com/FPJ-GAOGE/FinsROV-An-Underwater-Camera-Based-Multi-Robot-Platform/tree/main/Making_Instructions/Images/337707bc-6bd9-4c74-b155-716a861c906f.png" />
+![Wire](./Images/337707bc-6bd9-4c74-b155-716a861c906f.png?raw=true)
 
 ## Electronics
 The complete wiring diagram for the robot's internal circuitry is shown below:
 
 机器人内部电路的完整接线图如下：
 
-<img width="1994" height="1200" alt="inside Electronics" src="https://github.com/FPJ-GAOGE/FinsROV-An-Underwater-Camera-Based-Multi-Robot-Platform/tree/main/Making_Instructions/Images/8039e562-dc80-4d54-b2de-2b728531822c.png" />
+![Wire_in](./Images/8039e562-dc80-4d54-b2de-2b728531822c.png?raw=true)
+
 
 ### Internal Wiring
 C-board to I2C Expansion Board: Pins 2, 4, 6, and 8 of the IIC interface on the C-board are connected to GND, VCC, SCL, and SDA of the input terminal on the I2C expansion board (the side with 5 black base pins arranged in a row), respectively.
@@ -37,7 +38,8 @@ C板接PWM扩展板：C板PWM接口的任意一个5V端口与PWM扩展板输入�
 Manual soldering is overly complex due to numerous wirings, so the following terminal blocks are provided for easy wiring.
 
 防水舱内与舱外设备：由于接线数量较多，如果手动焊接会非常复杂，因此配置了如下的接线端子，方便接线。
-<img width="1206" height="639" alt="image" src="https://github.com/FPJ-GAOGE/FinsROV-An-Underwater-Camera-Based-Multi-Robot-Platform/tree/main/Making_Instructions/Images/65a80ee5-c591-4b9c-a4c4-a7b3ef23d753.png" />
+
+![Terminal_block](./Images/65a80ee5-c591-4b9c-a4c4-a7b3ef23d753.png?raw=true)
 
 Power Supply to C-board and Propellers: The external battery is connected to the power input port (No.8) of the internal C-board via a power cable, and any of the power output ports (No.9) on the C-board is connected to the power input ports of the 8 propellers (in parallel) through a terminal block.
 

@@ -13,7 +13,7 @@ FinsROV是一台开源的低成本水下机器人平台，面向AI和机器人�
 The FinsROV consists of a waterproof compartment with its internal circuitry, 8 propellers, 4 servos, 4 water depth sensors, and various brackets in total, with the model shown as follows:
 
 FinsROV整体包含防水仓及其内部电路、推进器 x8、舵机 x4、水深传感器 x4以及各个支架，模型如下：
-<img width="1188" height="735" alt="image" src="https://github.com/FPJ-GAOGE/FinsROV-An-Underwater-Camera-Based-Multi-Robot-Platform/tree/main/Structure/Images/7b80ec35-c6fb-4c0f-8c48-df3105a3505e.png" />
+![Model](./Structure/Images/7b80ec35-c6fb-4c0f-8c48-df3105a3505e.png?raw=true)
 
 FinsROV is equipped with two 2-DOF gimbals mounted on either side of the submersible respectively. Each gimbal consists of two servos, with a maximum rotation angle of -90° to 90° for each servo.
 
