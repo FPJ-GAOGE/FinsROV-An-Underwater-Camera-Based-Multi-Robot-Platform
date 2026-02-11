@@ -32,6 +32,7 @@ IIC扩展板接PWM扩展板：IIC扩展板输出端4号端口的GND、VCC、SCL�
 C-board to PWM Expansion Board: Any 5V port of the PWM interface on the C-board is connected to the V+ of the input terminal on the PWM Expansion Board.
 
 C板接PWM扩展板：C板PWM接口的任意一个5V端口与PWM扩展板输入端的V+相连
+
 <img width="1128" height="426" alt="image" src="https://github.com/user-attachments/assets/b2edcb37-1fee-4348-8422-6d7a144375c6" />
 
 ### Inside/Outside Devices Connection
@@ -44,6 +45,7 @@ Manual soldering is overly complex due to numerous wirings, so the following ter
 Power Supply to C-board and Propellers: The external battery is connected to the power input port (No.8) of the internal C-board via a power cable, and any of the power output ports (No.9) on the C-board is connected to the power input ports of the 8 propellers (in parallel) through a terminal block.
 
 电源接C板和推进器：舱外电池通过电源线连接舱内C板电源输入端（8号），C板电源输出端（9号任意一个）通过极限段子连接8个推进器电源输入端（并联）
+
 <img width="333" height="545" alt="image" src="https://github.com/user-attachments/assets/4cb6b7bf-2110-424a-acb1-654af6e473d6" />
 
 C-board to Programmer: The wireless programmer is connected to the host computer for firmware programming and debugging.The exterior cabin wireless programmer connects to the interior cabin wireless programmer via the SWD download port on the C‑Board, with SWCLK, SWDIO, GND, and 3.3V pins connected correspondingly.
