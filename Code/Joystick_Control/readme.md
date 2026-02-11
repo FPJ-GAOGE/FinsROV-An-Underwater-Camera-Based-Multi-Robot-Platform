@@ -88,4 +88,11 @@ You may verify detection via: Win + R → type `joy.cpl` → check whether the c
     ```Python
     serial.open("COM11")
     ```
-2. 运行`usbCameraFullControl`文件。操作按键为：start启动/关闭悬浮控制，十字键控制水平面前后左右运动，XY控制水平面旋转方向，AB控制上升下潜。注：目前速度为写死状态。
+2. 运行`usbCameraFullControl`文件。操作按键为：start启动/关闭悬浮控制，十字键控制水平面前后左右运动，XY控制水平面旋转方向，AB控制上升下潜。\
+注：目前速度为写死状态。
+
+## Note
+1. If the propellers whine or make obvious abnormal noises on startup, stop the robot immediately (set to OFF) and restart it (set to ON). Power off is generally unnecessary. Repeat the above steps until the propellers operate with normal noises.
+2. If the robot fails to respond to button presses, power it off and restart it directly.
+1. 若启动时推进器啸叫，出现明显不正常声音，立刻停止潜器（输OFF），再重新启动（输ON），一般不需要断电。直到推进器声音正常。
+2. 若出现按按键，但潜器没有反应，直接断电重启。

@@ -12,15 +12,8 @@ FinsROV是一台开源的低成本水下机器人平台，面向AI和机器人�
 
 The FinsROV consists of a waterproof compartment with its internal circuitry, 8 propellers, 4 servos, 4 water depth sensors, and various brackets in total, with the model shown as follows:
 
-FinsROV整体包含防水仓及其内部电路、推进器 *8、舵机 *4、水深传感器 *4以及各个支架，模型如下：
-<img width="1188" height="735" alt="image" src="https://github.com/user-attachments/assets/fe2c9f88-46f4-43ed-980f-b86c20867fb6" />
-
-The waterproof compartment houses the basic circuitry for the submersible's operation, including 1 C-board, 1 I2C expansion board, 1 PWM expansion board, 1 power distribution board, and the connecting wires for them. The waterproof compartment connects to external circuits via cable-passing screw holes on its back, with the connection corresponding to each screw hole as follows:
-
-防水仓内包含了潜器运行的基本电路，包括C板 *1、IIC扩展板 *1、PWM扩展板 *1、分电板 *1以及用于连接它们的电线。防水仓通过背部的穿线螺丝孔与外界电路进行连接，其中每个螺丝孔对应的连接为：
-<img width="2607" height="1074" alt="image" src="https://github.com/user-attachments/assets/34963ad7-11ad-46b3-a1b1-de70d0e29ac5" />
-
-<img width="1280" height="531" alt="防水仓" src="https://github.com/user-attachments/assets/68d546fd-b013-408e-a8cd-8d864b1ef431" />
+FinsROV整体包含防水仓及其内部电路、推进器 x8、舵机 x4、水深传感器 x4以及各个支架，模型如下：
+<img width="1188" height="735" alt="image" src="https://github.com/FPJ-GAOGE/FinsROV-An-Underwater-Camera-Based-Multi-Robot-Platform/tree/main/Structure/Images/7b80ec35-c6fb-4c0f-8c48-df3105a3505e.png" />
 
 FinsROV is equipped with two 2-DOF gimbals mounted on either side of the submersible respectively. Each gimbal consists of two servos, with a maximum rotation angle of -90° to 90° for each servo.
 
@@ -167,79 +160,11 @@ We have open-sourced all structural components of the underwater robot, which ca
 
 The complete BOM of our robot is shown below. For regions where components can be directly purchased on Taobao, you may click the links directly (this is not an advertisement; you may purchase from other suppliers). For those with no access to Taobao, please refer to the following information. A downloadable version of the BOM is also available in the Structure folder.
 
-我们机器人的完整BOM表格如下，对于能够直接通过淘宝采购零部件的地区，可以直接点链接（非广告，可以买别家的）。如果没有办法使用淘宝，可以参考一下内容。在Structure文件中也有对应可下载的BOM文件。
+我们机器人的完整BOM表格如下，对于能够直接通过淘宝采购零部件的地区，可以直接点击链接参考（不涉及任何广告，仅供参考）。在Structure文件中也有对应可下载的BOM文件。
 
 [中文版本](https://docs.google.com/spreadsheets/d/1fIgdKPsx-9QTdMGvk-Vg6hmxgAVsjg4v-JMBh90Yp5g/edit?gid=0#gid=0)
 
 [English Version BOM](https://docs.google.com/spreadsheets/d/1fIgdKPsx-9QTdMGvk-Vg6hmxgAVsjg4v-JMBh90Yp5g/edit?gid=352875595#gid=352875595)
-
-## Electronics
-The complete wiring diagram for the robot's internal circuitry is shown below:
-
-机器人内部电路的完整接线图如下：
-
-<img width="1994" height="1200" alt="inside Electronics" src="https://github.com/user-attachments/assets/9dd84f9b-5fa3-4b54-88f9-8dc48d61bfce" />
-
-External Wiring: 485: Green - A+ // Green-White - B- // Orange - GND
-
-外部接线：485：绿-A+ // 绿白-B- // 橙-GND
-
-Internal Wiring: C-board to I2C Expansion Board: Pins 2, 4, 6, and 8 of the IIC interface on the C-board are connected to GND, VCC, SCL, and SDA of the input terminal on the I2C expansion board (the side with 5 black base pins arranged in a row), respectively.
-
-内部接线：C板接IIC扩展板：C板IIC接口的2、4、6、8号分别与IIC扩展板输入端（一侧并排5个黑色底座针脚）的GND、VCC、SCL、SDA相连
-<img width="1197" height="324" alt="image" src="https://github.com/user-attachments/assets/d9d783e4-9902-47d3-96b0-ce0abd5396f7" />
-
-I2C Expansion Board to Water Pressure Gauges: The GND, VCC, SCL and SDA of Ports 0 to 3 on the output terminal of the I2C Expansion Board (each port corresponding to 4 base pins of different colors arranged in a row) are connected to the black, red, green and white wires of the 4 water pressure gauges respectively.
-
-IIC扩展板接水压计：IIC扩展板输出端0-3号端口（每个端口对应并排4个底座颜色不同的针脚）的GND、VCC、SCL、SDA分别与4个水压计的黑色、红色、绿色、白色线相连
-
-I2C Expansion Board to PWM Expansion Board: The GND, VCC, SCL and SDA of Port 4 on the output terminal of the I2C Expansion Board are connected to the GND, VCC, SCL and SDA of the input terminal on the PWM Expansion Board (the side with 6 black base pins arranged in a row) respectively.
-
-IIC扩展板接PWM扩展板：IIC扩展板输出端4号端口的GND、VCC、SCL、SDA分别与PWM扩展板输入端（一侧并排6个黑色底座针脚）的GND、VCC、SCL、SDA相连
-
-<img width="579" height="486" alt="image" src="https://github.com/user-attachments/assets/eaca67df-8637-442a-9803-b3504d304920" />
-
-C-board to PWM Expansion Board: Any 5V port of the PWM interface on the C-board is connected to the V+ of the input terminal on the PWM Expansion Board.
-
-C板接PWM扩展板：C板PWM接口的任意一个5V端口与PWM扩展板输入端的V+相连
-<img width="1128" height="426" alt="image" src="https://github.com/user-attachments/assets/b2edcb37-1fee-4348-8422-6d7a144375c6" />
-
-Devices Inside/Outside the Waterproof Compartment: Manual soldering is overly complex due to numerous wirings, so the following pluggable terminal blocks are provided for easy wiring.
-
-防水舱内与舱外设备：由于接线数量较多，如果手动焊接会非常复杂，因此配置了如下的接线端子，可以插拔并且方便接线。
-<img width="1206" height="639" alt="image" src="https://github.com/user-attachments/assets/0dc01e12-81e7-49c2-ae50-458fe09b8f6b" />
-
-There are 4 pcs of 6-pin sockets (large) for connecting propellers (each propeller has three wires for positive, negative and signal); 2 pcs of 6-pin sockets (small) for connecting servos (each servo has three wires for positive, negative and signal); 1 pc of 2-pin socket (large) for connecting the power supply (positive and negative poles); 1 pc of 7-pin socket (small) for connecting the serial port (3 wires for UART + 4 wires for SWD C-board program burning); the water depth sensor is connected via its own adapter board.
-
-共有6针座（大）*4，连接推进器（一个推进器包含正、负、信号三根线）；6针座（小）*2，连接舵机（一个舵机包含正、负、信号三根线）；2针座（大），连接电源（正、负级）；7针座（小），连接串口（UART三线+SWD C板程序烧写线四线）；水深传感器使用自带的转接板连接。
-
-Power Supply to C-board and Propellers: The external battery is connected to the power input port (No.8) of the internal C-board via a power cable, and any of the power output ports (No.9) on the C-board is connected to the power input ports of the 8 propellers (in parallel).
-
-电源接C板和推进器：舱外电池通过电源线连接舱内C板电源输入端（8号），C板电源输出端（9号任意一个）连接8个推进器电源输入端（并联）
-<img width="333" height="545" alt="image" src="https://github.com/user-attachments/assets/4cb6b7bf-2110-424a-acb1-654af6e473d6" />
-
-C-board to STLink: The STLink is connected to the host computer for program burning and debugging. The external STLink is connected to the SWD download port of the internal C-board, with SWCLK, SWDIO, GND and 3.3V connected in a one-to-one correspondence.
-
-C板接stlink：stlink连接上位机，用于程序烧写、调试.  舱外stlink连接舱内C板SWD下载线端口，SWCLK、SWDIO、GND、3.3V对应连接
-<img width="1175" height="600" alt="image" src="https://github.com/user-attachments/assets/86bfafe5-aaa4-4ff0-aef9-eaf95f40d009" />
-
-C-board to Serial Port: The serial port module is connected to the host computer for sending and receiving commands. The external serial port module is connected to UART6 of the internal C-board, with RX connected to TX, TX connected to RX, and GND connected to GND.
-
-C板接串口：串口模块连接上位机，用于收发指令,舱外串口模块连接舱内C板UART6，RX接TX，TX接RX，GND接GND
-<img width="1218" height="396" alt="image" src="https://github.com/user-attachments/assets/87e28afb-75b2-402b-9025-59e0b07dcc1f" />
-
-Propellers to PWM Expansion Board: The signal input terminals of the 8 external propellers are connected respectively to the PWM terminals (yellow base pins) of Ports 0 to 7 on the output terminal of the internal PWM Expansion Board.
-
-推进器接PWM扩展板：舱外8个推进器信号输入端分别连接舱内PWM扩展板输出端0-7号端口PWM端（黄色底座针脚）
-
-Servos to PWM Expansion Board: The 4 external servos are connected to Ports 8 to 11 on the output terminal of the internal PWM Expansion Board respectively, with the negative poles connected to GND, the positive poles connected to V+, and the signal wires connected to PWM.
-
-舵机接PWM扩展板：舱外4个舵机分别连接舱内PWM扩展板输出端8-11号端口，负极接GND，正极接V+，信号线接PWM
-<img width="345" height="510" alt="image" src="https://github.com/user-attachments/assets/a7500fb7-db0c-4101-976f-ee934d6556e9" />
-
-Water Pressure Gauges to Water Pressure Gauge Adapter Boards: The 4 external water pressure gauges connect to the 4 internal water pressure gauge adapter boards, which can be directly inserted into the terminals.
-
-水压计接水压计转接板：舱外4个水压计连接舱内4个水压机转接板，直接插入端子即可
 
 ## Controller
 
@@ -255,9 +180,9 @@ Our robot platform supports a variety of host computer systems, including but no
 
 ## Video 
 
-We provide a complete set of video tutorials for building the underwater vehicle. We sincerely apologize that these tutorials are only available on Bilibili with Chinese voice-overs and subtitles. We will also upload other relevant content, and we welcome you to subscribe to our [channel](https://space.bilibili.com/1188256336?spm_id_from=333.40164.0.0).
+We provide a complete set of video tutorials for building the underwater vehicle. We sincerely apologize that these tutorials are only available on Bilibili with Chinese voice-overs and subtitles. We will also upload other relevant content, and we welcome you to subscribe to our [channel](https://space.bilibili.com/1188256336?spm_id_from=333.40164.0.0). Additionally, the [Making_Instructions](https://github.com/FPJ-GAOGE/FinsROV-An-Underwater-Camera-Based-Multi-Robot-Platform/tree/main/Making_Instructions) folder also contains some documentation on the making instructions.
 
-我们为制作潜器提供完整的视频教程，但是非常抱歉，相关教程上传至BiliBili且只有中文配音与字幕。我们也会上传其他相关的内容，[欢迎订阅](https://space.bilibili.com/1188256336?spm_id_from=333.40164.0.0)
+我们为制作潜器提供完整的视频教程，但是非常抱歉，相关教程上传至BiliBili且只有中文配音与字幕。我们也会上传其他相关的内容，[欢迎订阅](https://space.bilibili.com/1188256336?spm_id_from=333.40164.0.0)。同时，[Making_Instructions](https://github.com/FPJ-GAOGE/FinsROV-An-Underwater-Camera-Based-Multi-Robot-Platform/tree/main/Making_Instructions)中也包含部分制作说明文档。
 
 How to bulid the robot platform: coming soon
 
@@ -266,12 +191,6 @@ coding: coming soon
 basic theory about underwater robot:[【面向水下机器人的动力学与运动学建模及控制器分析】](https://www.bilibili.com/video/BV1VXmQBRE2a/?share_source=copy_web&vd_source=898a23397484d4386766c76dfa58679f)
 
 demo:[【目前可公开的情报：FINS第一代水下机器人】](https://www.bilibili.com/video/BV1oC41177Rn/?share_source=copy_web&vd_source=e6237e17b71511df8920049cd998c076)
-
-## Note
-1. If the propellers whine or make obvious abnormal noises on startup, stop the robot immediately (set to OFF) and restart it (set to ON). Power off is generally unnecessary. Repeat the above steps until the propellers operate with normal noises.
-2. If the robot fails to respond to button presses, power it off and restart it directly.
-1. 若启动时推进器啸叫，出现明显不正常声音，立刻停止潜器（输OFF），再重新启动（输ON），一般不需要断电。直到推进器声音正常
-2. 若出现按按键，但潜器没有反应，直接断电重启
 
 ## Thank & Citation
 
