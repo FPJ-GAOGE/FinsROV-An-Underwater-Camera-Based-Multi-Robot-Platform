@@ -178,7 +178,7 @@ Our robot platform supports a variety of host computer systems, including but no
 
 我们的机器人平台支持多种上位机系统，包括但不限于windows，linux，Mac os，Android，树莓派等，我们推荐使用手柄进行控制。相关代码在[Joystick_Control](https://github.com/FPJ-GAOGE/FinsROV-An-Underwater-Camera-Based-Multi-Robot-Platform/tree/main/Code/Joystick_Control)中，配合Readme使用
 
-## Video 
+## Education
 
 We provide a complete set of video tutorials for building the underwater vehicle. We sincerely apologize that these tutorials are only available on Bilibili with Chinese voice-overs and subtitles. We will also upload other relevant content, and we welcome you to subscribe to our [channel](https://space.bilibili.com/1188256336?spm_id_from=333.40164.0.0). Additionally, the [Making_Instructions](https://github.com/FPJ-GAOGE/FinsROV-An-Underwater-Camera-Based-Multi-Robot-Platform/tree/main/Making_Instructions) folder also contains some documentation on the making instructions.
 
