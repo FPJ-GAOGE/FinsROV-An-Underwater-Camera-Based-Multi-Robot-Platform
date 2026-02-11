@@ -49,7 +49,7 @@ We have open-sourced all structural components of the underwater robot, which ca
     </tr>
     <tr style="border: 1px solid #ddd;">
       <td style="border: 1px solid #ddd; padding: 8px;">Weight in Air</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">4.33Kg(v3.0), 4.85Kg(v3.1)</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">4.85Kg</td>
       <td style="border: 1px solid #ddd; padding: 8px;">-</td>
     </tr>
     <tr style="border: 1px solid #ddd;">
@@ -114,7 +114,7 @@ We have open-sourced all structural components of the underwater robot, which ca
     </tr>
     <tr style="border: 1px solid #ddd;">
       <td style="border: 1px solid #ddd; padding: 8px;">空气中重量</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">4.33Kg(v3.0), 4.85Kg(v3.1)</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">4.85Kg</td>
       <td style="border: 1px solid #ddd; padding: 8px;"></td>
     </tr>
     <tr style="border: 1px solid #ddd;">
