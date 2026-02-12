@@ -184,13 +184,11 @@ We provide a complete set of video tutorials for building the underwater vehicle
 
 我们为制作潜器提供完整的视频教程，但是非常抱歉，相关教程上传至BiliBili且只有中文配音与字幕。我们也会上传其他相关的内容，[欢迎订阅](https://space.bilibili.com/1188256336?spm_id_from=333.40164.0.0)。同时，[Making_Instructions](https://github.com/FPJ-GAOGE/FinsROV-An-Underwater-Camera-Based-Multi-Robot-Platform/tree/main/Making_Instructions)中也包含部分制作说明文档。
 
-How to bulid the robot platform: coming soon
+How to bulid the robot platform & coding: [【上海交通大学】从0-1带你制作水下机器人](https://www.bilibili.com/video/BV13vcvzgEv3?p=11&vd_source=225e86b359e69725bfc871c2685a31c8)
 
-coding: coming soon
+Basic theory about underwater robot: [【面向水下机器人的动力学与运动学建模及控制器分析】](https://www.bilibili.com/video/BV1VXmQBRE2a/?share_source=copy_web&vd_source=898a23397484d4386766c76dfa58679f)
 
-basic theory about underwater robot:[【面向水下机器人的动力学与运动学建模及控制器分析】](https://www.bilibili.com/video/BV1VXmQBRE2a/?share_source=copy_web&vd_source=898a23397484d4386766c76dfa58679f)
-
-demo:[【目前可公开的情报：FINS第一代水下机器人】](https://www.bilibili.com/video/BV1oC41177Rn/?share_source=copy_web&vd_source=e6237e17b71511df8920049cd998c076)
+Demo: [【目前可公开的情报：FINS第一代水下机器人】](https://www.bilibili.com/video/BV1oC41177Rn/?share_source=copy_web&vd_source=e6237e17b71511df8920049cd998c076)
 
 ## Thank & Citation
 
