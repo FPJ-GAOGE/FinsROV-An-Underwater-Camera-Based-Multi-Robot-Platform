@@ -272,3 +272,8 @@ This file defines no class type and only contains function implementations for h
 | 舵机  | ``MOT:p0,p1,p2,p3`` | 4 路舵机 PWM          |
 | 水压计 | ``CA``              | 参数校准 |
 | 水压计 | ``VA``              | 返回水压计读数   |
+
+
+# V. 内部调试问题记录（外界仅供参考）
+1. V33-0和V33-2的电调初始化PWM值不同，如果上电后未听到电调初始化声音，可尝试在下位机代码的propeller.cpp文件中修改初始化PWM值
+2. V33-0和V33-2内部的RS485/422转TTL的线序暂时不同（2026年4月5日调试发现），如果使用带相机的那个线盘，接收端正常，但是发送端发送信息没有响应的话，则需要注意调整发送端的RS485/422转USB的线序（交换T/R+和T/R-的线序）
